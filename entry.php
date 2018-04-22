@@ -10,7 +10,7 @@
 		<input type="email" name="email" id="email" required>
 	</p>
 	<p class="form__error-text"> Confirm Email
-		<input type="tel" name="confirmEmail" id="confirmEmail" required>
+		<input type="email" name="confirmEmail" id="confirmEmail" required>
 	</p>
 	<p class="form__error-text"> Phone Number (optional)
 		<input type="text" name="phoneNumber" id="phoneNumber" >
