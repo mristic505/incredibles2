@@ -1,6 +1,7 @@
 <?php ?>
 <!DOCTYPE html>
 <html>
+
 <head>
 <title><?php echo $page_title; ?> | Incredibles 2</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
 <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
+
 <main>
 	<header class="header">
 		<div class="header__jj-logo-container">
