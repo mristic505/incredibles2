@@ -1,0 +1,35 @@
+/******************         Global          **********************/
+
+body {
+	font-family: sans-serif;
+}
+
+
+/******************         Footer          **********************/
+
+
+.footer {
+    border-top: 6px solid black;
+	background-color: #8ac540;
+	text-align: center;
+}
+
+.footer__container {
+    max-width: 90%;
+    margin: 0px auto;
+    padding: 20px 0px 40px;	
+}
+.footer p {
+	color: #1f5733;
+	font-size: 0.75rem;
+}
+
+.footer__legal-links {
+	color: #fff;
+}
+
+.footer__single-link {
+	margin: 0px 10px;
+	color: #fff;	
+	text-decoration: none;
+}
