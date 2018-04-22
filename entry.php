@@ -45,7 +45,7 @@
 		<input type="checkbox" name="sweepOptIn" id="sweepOptIn" required>
 	</div>
 	<div class="form__field-holder ">
-		<div class="g-recaptcha" data-sitekey="6LfoTjQUAAAAABe0lHjTIYld5wFnYq8__Tv9jjge"></div>
+		<div class="g-recaptcha" data-sitekey="6LcP2FQUAAAAAKR6_Fl0U6uw640gCz_0-fHNX-Sk"></div>
 	</div>
 	<div class="form__field-holder ">
 		<input type="submit" name="submit" id="submit" >
