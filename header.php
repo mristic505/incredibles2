@@ -12,3 +12,12 @@
 	</head>
 	<body>
 <main>
+	<header class="header">
+		<div class="header__jj-logo-container">
+			<img class="header__jj-logo-img" src="assets/imgs/jj-logo.png">
+		</div>
+		<section class="header__incredibles-hero-container">
+			<img class="header__incredibles-hero-img" src="assets/imgs/incredibles-hero-large.jpg">
+		</section>
+		
+	</header>

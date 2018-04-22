@@ -5,6 +5,32 @@ body {
 }
 
 
+/******************         Header          **********************/
+.header {
+    border-bottom: 6px solid #000000;
+}
+
+.header__jj-logo-container {
+    background-image: url(assets/imgs/header-cloud-bg.jpg);
+    background-size: cover;
+	
+}
+
+.header__incredibles-hero-container {
+	line-height: 0;
+}
+.header__incredibles-hero-img {
+	max-width: 100%;
+}
+
+.header__jj-logo-img {
+    display: block;
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+
 /******************         Footer          **********************/
 
 
