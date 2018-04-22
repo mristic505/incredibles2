@@ -8,7 +8,8 @@
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 		<!-- User Stylesheet -->
 		<link rel="stylesheet" type="text/css" href="style.css">
-
+		
+		<script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
 	<body>
 <main>
