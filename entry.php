@@ -52,4 +52,3 @@
 	</div>
 </form>
 <div class="response"></div>
-

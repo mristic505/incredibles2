@@ -9,6 +9,8 @@ $data           = array();      // array to pass back data
 
 $firstName = $_GET['firstName'];
 $lastName = $_GET['lastName'];
+$recaptcha = $_GET['recaptcha'];
+$captcha_secret_key = '6LcP2FQUAAAAALsa2qx_YAKAimbqykZm6rw7XNy3';
 
 // Form validation
 if(empty($firstName))
@@ -23,21 +25,30 @@ if ( ! empty($errors)) {
     $data['errors']  = $errors;
 } else {
     // if there are no errors process our form, then return a message
+    $data['success'] = true;
 
-    // VALIDATE CAPTCHA =================
-    $secret         = '6LfoTjQUAAAAAJnpxLvTOYn2vkZwLkDZdfeY1QdS';
-    //get verify response data
-    $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $secret . '&response=' . $recaptcha);
-    $responseData   = json_decode($verifyResponse);
-
-    if ($responseData->success) { // If recpatcha response verified
-        $data['success'] = true;
-        $data['message'] =  'success';
-        
-        
+    // CURL TO VALIDATE CAPTCHA
+    function file_get_contents_curl($url) {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_AUTOREFERER, TRUE);
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);       
+        $data = curl_exec($ch);
+        curl_close($ch);
+        return $data;
     }
-    else { // If recpatcha response not verified
-        $data['message'] = 'robot_verification_failed';
+    $verifyResponse = file_get_contents_curl('https://www.google.com/recaptcha/api/siteverify?secret='.$captcha_secret_key.'&response='.$recaptcha);
+    $responseData = json_decode($verifyResponse);
+
+    // IF reCAPTCHA RETURNS POSITIVE RESPONSE
+    if($responseData->success){
+        
+        $data['message'] =  'success';
+    }
+    else {
+        $data['message'] =  'robot_verification_failed';
     }
 } 
 

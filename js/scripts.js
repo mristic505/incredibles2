@@ -10,12 +10,21 @@ jQuery(document).ready(function($){
 	        url: 'http://juicyjuicegame.com/incredibles2/process.php',
 	        data: {
 	            firstName : $('#firstName').val(),
-	            lastName : $('#lastName').val()
+	            lastName : $('#lastName').val(),
+	            email : $('#confirmEmail').val(),
+	            phoneNumber : $('#phoneNumber').val(),
+	            firstCode : $('#firstCode').val(),
+	            secondCode : $('#secondCode').val(),
+	            thirdCode : $('#thirdCode').val(),
+	            ageCheck : $('#ageCheck').val(),
+	            emailOptIn : $('#emailOptIn').val(),
+	            sweepOptIn : $('#sweepOptIn').val(),
+	            recaptcha: grecaptcha.getResponse()
 	        },
 	        dataType: 'jsonp',
 	        crossDomain: true,
 	    }).done(function(response){
-	        console.log(response[0]['message']);
+	        console.log(response);
 	    }).fail(function(error){
 	        console.log(error.statusText);
 	    });
