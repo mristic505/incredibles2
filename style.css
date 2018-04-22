@@ -81,6 +81,7 @@ img {
 .landing-page__container {
     background-image: url(assets/imgs/background-img-green-gradient.jpg);
     background-size: cover;
+    padding-bottom: 64px;
 
 }
 
@@ -100,6 +101,7 @@ img {
 	.landing-page__text-section {
 	    position: relative;
 	    left: 63px;
-	    bottom: 51px;		
+	    bottom: 51px;	
+        width: 50%;	
 	}
 }
