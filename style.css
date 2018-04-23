@@ -542,7 +542,14 @@ img {
         cursor: pointer;
     }
 
+
     .adv-title-img {
         padding: 40px 0px;
     }
+
+}
+
+.error_message {
+    color: #B94A48;
+
 }
