@@ -343,6 +343,11 @@ img {
     text-align: center;	
 }
 
+.rules__title-img {
+    padding: 60px 0px;
+    max-width: 70%;    
+}
+
 .rules__container > p {
     max-width: 90%;
     margin: auto;
