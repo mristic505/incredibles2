@@ -20,7 +20,7 @@ jQuery(document).ready(function($){
 	            ageCheck : $('#ageCheck').val(),
 	            emailOptIn : $('#emailOptIn').val(),
 	            sweepOptIn : $('#sweepOptIn').val(),
-	            // recaptcha: grecaptcha.getResponse()
+	            recaptcha: grecaptcha.getResponse()
 	        },
 	        dataType: 'jsonp',
 	        crossDomain: true,

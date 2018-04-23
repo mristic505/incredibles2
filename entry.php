@@ -54,7 +54,7 @@
 					<label for="ageCheck">I am 18 years or older. I’ve read and agree to the <a href="#">Official Rules</a> of the promotion.</label>
 				</div>
 				<div class="form__field-holder form__email-opt-in">
-					<input type="checkbox" name="emailOptIn" id="emailOptIn" >
+					<input type="checkbox" name="emailOptIn" id="emailOptIn" value="1" checked="">
 					<label for="emailOptIn">I would like to receive offers and information from Juicy Juice®. (optional)</label>
 				</div>
 				<div class="form__field-holder form__sweep-opt-in">
