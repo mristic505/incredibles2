@@ -57,8 +57,8 @@ jQuery(document).ready(function($){
 
 
     $('#phoneNumber').mask('(000) 000-0000');
-    $('#firstCode').mask('AAA AAA AAA');
+    $('#firstCode').mask('AAAAAAAAA');
     $('#secondCode').mask('AAAAAAAAA');
-    $('#thirdCode').mask('AAA-AAA-AAA');
+    $('#thirdCode').mask('AAAAAAAAA');
 
 });
