@@ -26,6 +26,23 @@ jQuery(document).ready(function($){
 	        crossDomain: true,
 	    }).done(function(response){
 	        console.log(response);
+	        if(response[0]['success']=true) {
+	        	if(response[0]['message'] == "duplicate_codes_submitted") {
+	        		alert('Duplicate codes submitted');
+	        	}
+	        	if(response[0]['message'] == "already_used") {
+	        		alert('One or more codes have been already used');
+	        	}
+	        	if(response[0]['message'] == "codes_not_found") {
+	        		alert('One or more codes are invalid');
+	        	}
+	        	if(response[0]['message'] == "all_codes_found_entry_made") {
+	        		window.location.href = "?page=thank-you";
+	        	}
+
+	        }
+
+	        
 	    }).fail(function(error){
 	        console.log(error.statusText);
 	    });

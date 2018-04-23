@@ -112,7 +112,7 @@ if (!empty($errors)) {
             $thirdCode
         );
         if (array_has_dupes($codes) > 0) {
-            $data['message'] = 'duplicate_codes_submittes';
+            $data['message'] = 'duplicate_codes_submitted';
             return_response($data);
             die();
         }
@@ -164,7 +164,11 @@ if (!empty($errors)) {
             '   '.$result[0]['fandango_code'].PHP_EOL.
             '5. Complete your purchase and decide how you want to pick up your tickets.'.PHP_EOL.
             'Terms and Conditions: Fandango Promotional Code is good towards one movie ticket (up to $7.50 total ticket and convenience fee value) to see Incredibles 2 or any other Disney movie at Fandango partner theaters in the U.S. Fandango Promotional Code must be redeemed by March 31, 2019 and is void if not redeemed by the expiration date. Only valid for purchase of movie tickets made at www.fandango.com/promo/juicyjuice or via the Fandango app and cannot be redeemed directly at any Fandango partner theater box office. If lost or stolen, cannot be replaced and there will be no refunds. No cash value. Not valid with any other offer. Fandango Promotional Code is valid for one-time use only. Not for resale; void if sold or exchanged. If cost of movie ticket with Fandango\'s convenience fee included is more than maximum value of the Fandango Promotional Code, then user must pay the difference. Fandango Loyalty Solutions, LLC is not a sponsor or co-sponsor of this program. The redemption of Fandango Promotional Code is subject to Fandango\'s Terms and Policies at www.fandango.com/terms-and-policies. All Rights Reserved.';
-            
+        if(!$mail->send()) {
+            $data['email'] = 'Mailer Error: ' . $mail->ErrorInfo;
+        } else {
+            $data['email'] = 'Message has been sent';
+        }
         
         
     // If robot verification fails ===========    
