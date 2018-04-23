@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
