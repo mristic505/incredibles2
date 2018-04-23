@@ -116,7 +116,7 @@ img {
     margin: 30px auto;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
 	.landing-page__top-section {
 	    display: flex;
 	    align-items: center;
@@ -202,6 +202,12 @@ img {
     color: white;
     text-decoration: none;
     font-weight: bold;    
+}
+
+#firstCode,
+#secondCode,
+#thirdCode {
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
@@ -331,7 +337,7 @@ img {
 /******************         Rules Page          **********************/
 
 .rules__container {
-    padding-bottom: 40px;	
+    padding-bottom: 40px;   
 }
 
 .rules__title {
@@ -340,7 +346,12 @@ img {
     padding-top: 70px;
     font-size: 50px;
     color: #ffffff;
-    text-align: center;	
+    text-align: center; 
+}
+
+.rules__title-img {
+    padding: 60px 0px;
+    max-width: 70%;    
 }
 
 .rules__container > p {
@@ -353,8 +364,9 @@ img {
     color: #ffffff;
 }
 .no-b-margin {
-	margin-bottom: 0 !important;
+    margin-bottom: 0 !important;
 }
+/******************         FAQ Page          **********************/
 
 .faq__container {
     max-width: 90%;
@@ -378,7 +390,16 @@ img {
     font-family: 'Cabrito-ConReg';
 }
 
+.faq__title-img {
+    padding: 50px 0px;
+    max-width: 70%;    
+}
 
+@media screen and (min-width: 768px) {
+    .faq__container {
+        max-width: 80%;
+    }
+}
 
 /******************         Modals          **********************/
 
@@ -388,7 +409,7 @@ img {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 60px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -453,15 +474,12 @@ img {
     margin: 20px auto;        
 }
 
-.codeModalTitle {
-
-}
-
 #adventureModal {
     font-size: 12px;
     color: white;
     text-decoration: underline;
-    text-align: center;    
+    text-align: center;
+    cursor: pointer;   
 }
 
 @media screen and (min-width: 768px) {
@@ -470,22 +488,15 @@ img {
     }
 
     .codeModalText {
-        font-size: 32px;
-        font-family: Arial;
-        color: white;
-        text-align: center;
+        font-size: 24px;
+    }
+
+    .code-image-examples {
         max-width: 80%;
-        margin: 20px auto;        
     }
 
     .adventureText {
-    
-        font-family: Arial;
-        font-size: 48px;
-        color: white;
-        text-align: center;
-        max-width: 95%;
-        margin: auto;        
+        font-size: 28px;      
     }
 
     /* The Close Button */

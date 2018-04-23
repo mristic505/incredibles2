@@ -93,7 +93,7 @@
     <span class="close">&times;</span>
 	<img class="codeModalTitle" srcset="assets/imgs/how-to-find-your-code-txt.png">
 	<p class="codeModalText">Check under the labels of specially-marked Disney/Pixar® Incredibles 2 Juicy Juice® packages to locate your code.</p>
-	<img src="assets/imgs/code-popup-hero.png">
+	<img class="code-image-examples" src="assets/imgs/code-popup-hero.png">
   </div>
 
 </div><!-- The Modal -->
@@ -102,7 +102,7 @@
   <!-- Modal content -->
   <div class="modal-content green-bg-gradient">
     <span class="close2">&times;</span>
-	<img src="assets/imgs/modal-family-adv-title.png">
+	<img class="adv-title-img" src="assets/imgs/modal-family-adv-title.png">
 	<p class="adventureText">With every movie ticket reward, you’ll be entered for a chance win $10,000 towards a trip of your choice. Where you go on your incredible family adventure is totally up to you!</p>
 	<img src="assets/imgs/popup-adventure-logos.png">
   </div>

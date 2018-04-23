@@ -2,7 +2,7 @@
 
 <div class="rules__container green-bg-gradient">
 	<!-- <h1 class="rules__title">JUICY JUICE<sup>&reg;</sup> “INCREDIBLE FAMILY ADVENTURE” OFFER &amp; SWEEPSTAKES OFFICIAL RULES</h1> -->
-	<img style="padding: 20px 0px" src="assets/imgs/official-rules-title.png">
+	<img class="rules__title-img" src="assets/imgs/official-rules-title.png">
 	<p class="no-b-margin">NO PURCHASE NECESSARY. A PURCHASE WILL NOT IMPROVE CHANCES OF WINNING.</p>
 
 	<p>PROMOTION PERIOD: The Juicy Juice® "Incredible Family Adventure" Offer &amp; Sweepstakes ("Promotion") begins at 12:00 p.m. Eastern Time (“ET”) on May 1, 2018 and ends at 04:59 p.m. ET on October 31, 2018 (“Promotion Period”). The Promotion will consist of (i) a gift with purchase offer where eligible individuals can purchase specially marked Juicy Juice products and redeem corresponding product package codes to receive one (1) Fandango Promotional Code (the “Offer”); and (ii) a sweepstakes where individuals can enter a random drawing for a chance to win the grand prize outlined below (the “Sweepstakes”). The Administrator’s computer is the official time keeping device for this Promotion.</p>
