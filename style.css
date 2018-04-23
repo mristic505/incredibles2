@@ -242,3 +242,38 @@ img {
 	    width: 50%;
 	}
 }
+/******************         Thank You Page          **********************/
+
+
+.white {
+	color: #ffffff;
+}
+.social-media-container {	
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.socia-media__horozontal-margin {
+	margin: 0px 20px;
+}
+
+.thank-you__container {
+    padding: 60px 20px 0px;	
+}
+
+.thank-you__title {
+    max-width: 850px;
+    text-align: center;
+    color: #0b5a2d;
+    margin: 30px auto;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: 100;	
+}
+
+
+.social-text {
+    text-align: center;
+    color: white;
+}
