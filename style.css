@@ -1,6 +1,4 @@
 /******************         Fonts          **********************/
-
-
 @font-face {
   font-family: 'Cabrito-NorExB';
   src: url('fonts/Cabrito-NorExB.eot?#iefix') format('embedded-opentype'),  url('fonts/Cabrito-NorExB.otf')  format('opentype'),
@@ -9,7 +7,6 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'Cabrito-ConReg';
   src: url('fonts/Cabrito-ConReg.eot?#iefix') format('embedded-opentype'),  url('fonts/Cabrito-ConReg.otf')  format('opentype'),
@@ -17,9 +14,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
-
-
 
 /******************         Global          **********************/
 
@@ -116,6 +110,10 @@ img {
 .landing-page__top-section {
     display: block;
     padding: 20px 20px;	
+}
+
+.landing-page_subtext {
+    margin: 30px auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -404,11 +402,10 @@ img {
 .modal-content {
     margin: auto;
     padding: 20px;
-    border: 27px solid #fff;
+    border: 10px solid #fff;
     position: relative;
-    /*width: 80%;*/
+    width: 60%;
     border-radius: 12px;
-    max-width: 1000px;
 }
 
 /* The Close Button */
@@ -417,15 +414,15 @@ img {
     position: absolute;
     font-weight: bold;
     background-color: red;
-    font-size: 60px;
-    width: 56px;
-    right: -50px;
+    font-size: 25px;
+    width: 30px;
+    right: -24px;
     text-align: center;
-    line-height: 48px;
+    line-height: 28px;
     border-radius: 50%;
-    height: 56px;
-    border: 12px solid #ffffff;
-    top: -50px;
+    height: 30px;
+    border: 7px solid #ffffff;
+    top: -27px;
 }
 
 .close:hover,
@@ -438,21 +435,22 @@ img {
 }
 
 .adventureText {
+
     font-family: Arial;
-    font-size: 48px;
+    font-size: 14px;
     color: white;
     text-align: center;
-    max-width: 95%;
+    width: 95%;
     margin: auto;
 }
 
 .codeModalText {
-    font-size: 32px;
+    font-size: 19px;
     font-family: Arial;
     color: white;
     text-align: center;
-    max-width: 80%;
-    margin: 20px auto;    
+    max-width: 90%;
+    margin: 20px auto;        
 }
 
 .codeModalTitle {
@@ -464,4 +462,55 @@ img {
     color: white;
     text-decoration: underline;
     text-align: center;    
+}
+
+@media screen and (min-width: 768px) {
+    .modal-content {
+
+    }
+
+    .codeModalText {
+        font-size: 32px;
+        font-family: Arial;
+        color: white;
+        text-align: center;
+        max-width: 80%;
+        margin: 20px auto;        
+    }
+
+    .adventureText {
+    
+        font-family: Arial;
+        font-size: 48px;
+        color: white;
+        text-align: center;
+        max-width: 95%;
+        margin: auto;        
+    }
+
+    /* The Close Button */
+    .close, .close2 {
+        color: #ffffff;
+        position: absolute;
+        font-weight: bold;
+        background-color: red;
+        font-size: 60px;
+        width: 56px;
+        right: -50px;
+        text-align: center;
+        line-height: 48px;
+        border-radius: 50%;
+        height: 56px;
+        border: 12px solid #ffffff;
+        top: -50px;
+    }
+
+    .close:hover,
+    .close:focus,
+    .close2:hover,
+    .close2:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
