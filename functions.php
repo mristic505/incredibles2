@@ -11,6 +11,10 @@ if (strpos($url_string, 'page') !== false) {
         $page_title = 'Enter';
         $include    = 'entry.php';
     }
+    if ($page == 'thank-you') {
+        $page_title = 'Thank You!';
+        $include    = 'thank-you.php';
+    }
     
 } else {
     $page_title = 'Get Started';
