@@ -38,7 +38,12 @@ jQuery(document).ready(function($){
 	        	}
 	        	if(response[0]['message'] == "all_codes_found_entry_made") {
 	        		window.location.href = "?page=thank-you";
-	        	}
+	        	}	        	
+	        	if (typeof response[0]['errors'] != "undefined") {
+				   if(response[0]['errors']['email'] == "Emails_do_not_match") {
+		        		$('.form__email').append('<div class="error_message">Emails do not match</div>');
+		        	}
+				}
 
 	        }
 
