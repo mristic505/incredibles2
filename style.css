@@ -306,3 +306,23 @@ img {
 .no-b-margin {
 	margin-bottom: 0 !important;
 }
+
+.faq__container {
+    max-width: 90%;
+    margin: auto;
+
+}	
+
+.faq__title {
+	margin: 0px auto 10px;
+	max-width: 90%;
+    color: #ffffff;
+}
+.faq__question {
+	margin: 0;
+	color: #1b5733;
+}
+.faq__answer {
+	margin-top: 0;
+	color: #ffffff;
+}

@@ -19,6 +19,10 @@ if (strpos($url_string, 'page') !== false) {
         $page_title = 'Rules';
         $include    = 'rules.php';
     }
+    if ($page == 'faq') {
+        $page_title = 'FAQ';
+        $include    = 'faq.php';
+    }
 
 } else {
     $page_title = 'Get Started';

@@ -1,8 +1,6 @@
 <?php ?>
 
 <div class="rules__container green-bg-gradient">
-
-
 	<h1 class="rules__title">JUICY JUICE<sup>&reg;</sup> “INCREDIBLE FAMILY ADVENTURE” OFFER &amp; SWEEPSTAKES OFFICIAL RULES</h1>
 
 	<p class="no-b-margin">NO PURCHASE NECESSARY. A PURCHASE WILL NOT IMPROVE CHANCES OF WINNING.</p>
