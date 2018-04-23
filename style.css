@@ -223,6 +223,11 @@ img {
     margin-bottom: 15px;
 }
 
+.form__captcha {
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (min-width: 768px) {
 
     .form__field-holder label {

@@ -68,7 +68,7 @@
 			<div class="popup__details-container">
 				<p id="adventureModal">Click here for sweeps details.</a>
 			</div>
-			<div class="form__field-holder ">
+			<div class="form__field-holder form__captcha ">
 				<div class="g-recaptcha" data-sitekey="6LcP2FQUAAAAAKR6_Fl0U6uw640gCz_0-fHNX-Sk"></div>
 			</div>
 			<div class="form__field-holder ">
