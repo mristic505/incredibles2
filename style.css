@@ -331,7 +331,7 @@ img {
 /******************         Rules Page          **********************/
 
 .rules__container {
-    padding-bottom: 40px;	
+    padding-bottom: 40px;   
 }
 
 .rules__title {
@@ -340,7 +340,7 @@ img {
     padding-top: 70px;
     font-size: 50px;
     color: #ffffff;
-    text-align: center;	
+    text-align: center; 
 }
 
 .rules__title-img {
@@ -358,8 +358,9 @@ img {
     color: #ffffff;
 }
 .no-b-margin {
-	margin-bottom: 0 !important;
+    margin-bottom: 0 !important;
 }
+/******************         FAQ Page          **********************/
 
 .faq__container {
     max-width: 90%;
@@ -383,7 +384,16 @@ img {
     font-family: 'Cabrito-ConReg';
 }
 
+.faq__title-img {
+    padding: 50px 0px;
+    max-width: 70%;    
+}
 
+@media screen and (min-width: 768px) {
+    .faq__container {
+        max-width: 80%;
+    }
+}
 
 /******************         Modals          **********************/
 
