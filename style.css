@@ -277,3 +277,32 @@ img {
     text-align: center;
     color: white;
 }
+
+
+
+/******************         Rules Page          **********************/
+
+.rules__container {
+    padding-bottom: 40px;	
+}
+
+.rules__title {
+    max-width: 90%;
+    margin: 0px auto 30px;
+    padding-top: 70px;
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;	
+}
+
+.rules__container > p {
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-align: center;
+    color: #ffffff;
+}
+.no-b-margin {
+	margin-bottom: 0 !important;
+}

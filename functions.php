@@ -15,7 +15,11 @@ if (strpos($url_string, 'page') !== false) {
         $page_title = 'Thank You!';
         $include    = 'thank-you.php';
     }
-    
+    if ($page == 'rules') {
+        $page_title = 'Rules';
+        $include    = 'rules.php';
+    }
+
 } else {
     $page_title = 'Get Started';
     $page       = 'get-started';
