@@ -1,3 +1,26 @@
+/******************         Fonts          **********************/
+
+
+@font-face {
+  font-family: 'Cabrito-NorExB';
+  src: url('fonts/Cabrito-NorExB.eot?#iefix') format('embedded-opentype'),  url('fonts/Cabrito-NorExB.otf')  format('opentype'),
+         url('fonts/Cabrito-NorExB.woff') format('woff'), url('fonts/Cabrito-NorExB.ttf')  format('truetype'), url('Cabrito-NorExB.svg#Cabrito-NorExB') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Cabrito-ConReg';
+  src: url('fonts/Cabrito-ConReg.eot?#iefix') format('embedded-opentype'),  url('fonts/Cabrito-ConReg.otf')  format('opentype'),
+         url('fonts/Cabrito-ConReg.woff') format('woff'), url('fonts/Cabrito-ConReg.ttf')  format('truetype'), url('Cabrito-ConReg.svg#Cabrito-ConReg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
 /******************         Global          **********************/
 
 body {
@@ -120,7 +143,7 @@ img {
     margin: 0 0 5px;
     font-family: Arial;
     line-height: 45px;
-    font-size: 47px;
+    font-size: 35px;
     text-align: center;
     color: #0b5a2d;
     font-weight: 100;
@@ -129,16 +152,22 @@ img {
 .entry-page__instruction-subtext {
     margin: 0 0 5px;
     font-family: Arial;
-    font-size: 27px;
+    font-size: 20px;
     line-height: 27px;
     text-align: center;
     color: #0b5a2d;
-    font-weight: 100;	
+    font-weight: 100;
 }
 
 .entry-page__form-instruction {
     color: white;
     text-align: center;	
+}
+
+.form__field-holder {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;    
 }
 
 .form__field-holder input {
@@ -158,20 +187,31 @@ img {
     border: none;
     background-repeat: no-repeat;
     border-radius: 45px;
+    cursor: pointer;
 }
 
 #ageCheck, #emailOptIn, #sweepOptIn {
-    height: auto;
+    height: 16px;
 }
 
 .faq__code-text {	
     color: #ffffff;
     text-align: center;
+    cursor: pointer;
+}
+
+.official-rules-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;    
 }
 
 @media screen and (min-width: 768px) {
 
-
+    .form__field-holder label {
+        margin-bottom: 10px;
+        display: block;
+    }
 	.entry-page__container {
 	    display: flex;
 	    align-items: flex-end;
@@ -212,7 +252,8 @@ img {
 	.form__last-name,
 	.form__email,
 	.form__confirm-email {
-		width: 40%;
+        width: 40%;
+        text-align: left;
 	}
 
 	.form__phone-number {
@@ -223,9 +264,13 @@ img {
 	#ageCheck, 
 	#emailOptIn,
 	#sweepOptIn {	
-	    display: inline-block;
-	    width: auto;
+        display: inline-block;
+        width: auto;
+        margin-bottom: 10px;
 	}
+    .form__checkbox-container .form__field-holder label {
+        display: unset;        
+    }
 
 	.form__checkbox-container {
 		text-align: center;
@@ -304,8 +349,9 @@ img {
     max-width: 90%;
     margin: auto;
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
+    font-family: 'Cabrito-ConReg';
     color: #ffffff;
 }
 .no-b-margin {
@@ -314,7 +360,7 @@ img {
 
 .faq__container {
     max-width: 90%;
-    margin: auto;
+    margin: 0px auto 40px;
 
 }	
 
@@ -326,10 +372,12 @@ img {
 .faq__question {
 	margin: 0;
 	color: #1b5733;
+    font-family: 'Cabrito-NorExB';
 }
 .faq__answer {
 	margin-top: 0;
 	color: #ffffff;
+    font-family: 'Cabrito-ConReg';
 }
 
 
@@ -358,12 +406,13 @@ img {
     padding: 20px;
     border: 27px solid #fff;
     position: relative;
-    width: 80%;
+    /*width: 80%;*/
     border-radius: 12px;
+    max-width: 1000px;
 }
 
 /* The Close Button */
-.close {
+.close, .close2 {
     color: #ffffff;
     position: absolute;
     font-weight: bold;
@@ -380,8 +429,39 @@ img {
 }
 
 .close:hover,
-.close:focus {
+.close:focus,
+.close2:hover,
+.close2:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+.adventureText {
+    font-family: Arial;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    max-width: 95%;
+    margin: auto;
+}
+
+.codeModalText {
+    font-size: 32px;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+    max-width: 80%;
+    margin: 20px auto;    
+}
+
+.codeModalTitle {
+
+}
+
+#adventureModal {
+    font-size: 12px;
+    color: white;
+    text-decoration: underline;
+    text-align: center;    
 }

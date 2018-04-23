@@ -1,8 +1,10 @@
 <?php ?>
 
 <div class="faq__body green-bg-gradient">
-	<h2 class="faq__title">JUICY JUICE® “INCREDIBLE FAMILY ADVENTURE” OFFER & SWEEPSTAKES May 1 – October 31, 2018</h2>
-	<h2 class="faq__title">Frequently asked questions</h2>
+<!-- 	<h2 class="faq__title">JUICY JUICE® “INCREDIBLE FAMILY ADVENTURE” OFFER & SWEEPSTAKES May 1 – October 31, 2018</h2> -->
+
+	<img style="padding: 20px 0px" src="assets/imgs/faq-title-img.png">
+	<!-- <h2 class="faq__title">Frequently asked questions</h2> -->
 
 	<div class="faq__container">
 		<h3 class="faq__question">What are the promotion dates?</h3>
@@ -108,7 +110,7 @@
 		<h3 class="faq__question">What if I did not receive my Fandango Promotional Code?</h3>
 		<p class="faq__answer">Please submit your information to juicyjuice@brandconnections.com and we will contact you.</p>
 	</div>
-	<div class="faq__container">
+	<div class="faq__container no-b-margin" style="padding-bottom: 40px;">
 		<h3 class="faq__question">I’m having trouble with my Fandango Promotional Code. </h3>
 		<p class="faq__answer no-b-margin ">Please contact Fandango Customer Service for further assistance at <a href="tel:8663430676">866-343-0676.</a> Be sure to mention what promotion you participated in, and any details of what you need assistance with.</p>
 	</div>
