@@ -525,3 +525,7 @@ img {
         cursor: pointer;
     }
 }
+
+.error_message {
+    color: #B94A48;
+}
