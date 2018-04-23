@@ -9,5 +9,6 @@
 			See www.juicyjuice.com/incredibles2 for full details. While supplies last. </p>
 		</div>
 	</footer>
+	<script type="text/javascript" src="js/modal.js"></script>
 </body>
 </html>

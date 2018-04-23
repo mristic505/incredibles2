@@ -48,6 +48,9 @@
 					<input type="text" name="thirdCode" id="thirdCode" >
 				</div>
 			</div>
+			<div class="faq_where-is-code-container">
+				<p class="faq__code-text" id="faq__code-modal">Where's my code?</p>
+			</div>
 			<div class="form__checkbox-container">
 				<div class="form__field-holder form__age-check">
 					<input type="checkbox" name="ageCheck" id="ageCheck" required>
@@ -77,4 +80,20 @@
 		<img src="assets/imgs/jack-jack-orange-jj-bottle.png">
 	</div>
 	<div class="response"></div>
+</div>
+
+<!-- Trigger/Open The Modal -->
+<!-- <button id="myBtn">Open Modal</button> -->
+
+<!-- The Modal -->
+<div id="codeModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content green-bg-gradient">
+    <span class="close">&times;</span>
+	<h2>HOW TO FIND YOUR CODE</h2>
+	<p>Check under the labels of specially-marked Disney/Pixar® Incredibles 2 Juicy Juice® packages to locate your code.</p>
+	<img src="assets/imgs/code-popup-hero.png">
+  </div>
+
 </div>
