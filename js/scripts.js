@@ -4,6 +4,12 @@ jQuery(document).ready(function($){
 	// process the form
     $('form').submit(function(event) {
 
+    	$('.form__field-holder').each(function(){    		
+    		$(this).removeClass('has-error');
+    	});
+    	$('.error_message').each(function(){
+    		$(this).remove();
+    	});
 
         $.ajax({
 	        type: 'GET',
@@ -28,13 +34,17 @@ jQuery(document).ready(function($){
 	        console.log(response);
 	        if(response[0]['success']=true) {
 	        	if(response[0]['message'] == "duplicate_codes_submitted") {
-	        		alert('Duplicate codes submitted');
+	        		$('.form__first-code').append('<div class="error_message">Duplicate codes submittedd</div>');
+	        		$('.form__first-code').addClass('has-error');
 	        	}
 	        	if(response[0]['message'] == "already_used") {
-	        		alert('One or more codes have been already used');
+	        		$('.form__first-code').append('<div class="error_message">One or more codes have been already used</div>');
+	        		$('.form__first-code').addClass('has-error');
 	        	}
 	        	if(response[0]['message'] == "codes_not_found") {
-	        		alert('One or more codes are invalid');
+	        		// alert('One or more codes are invalid');
+	        		$('.form__first-code').append('<div class="error_message">One or more codes are invalid</div>');
+	        		$('.form__first-code').addClass('has-error');
 	        	}
 	        	if(response[0]['message'] == "all_codes_found_entry_made") {
 	        		window.location.href = "?page=thank-you";
@@ -42,16 +52,23 @@ jQuery(document).ready(function($){
 	        	if (typeof response[0]['errors'] != "undefined") {
 				   if(response[0]['errors']['email'] == "Emails_do_not_match") {
 		        		$('.form__email').append('<div class="error_message">Emails do not match</div>');
+		        		$('.form__email').addClass('has-error');
 		        	}
 				}
-
 	        }
-
 	        
 	    }).fail(function(error){
 	        console.log(error.statusText);
 	    });
 	    event.preventDefault();
+
+	    $( document ).ajaxComplete(function() {
+	    	if($('.has-error').length > 0) {
+	    		$('html, body').animate({
+    				scrollTop: ($('.has-error').offset().top)
+				},500);
+			}		  	
+		});
 
     });
 
