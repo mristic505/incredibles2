@@ -1,6 +1,6 @@
 <?php ?>
 
-<div class="landing-page__container">
+<div class="landing-page__container green-bg-gradient">
 	<div class="landing-page__top-section">
 		<div class="landing-page__text-section">
 			<img src="assets/imgs/free-movie-ticket-txt.png">

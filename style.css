@@ -10,6 +10,12 @@ img {
 	margin: 0 auto;
 }
 
+.green-bg-gradient {
+    background-image: url(assets/imgs/background-img-green-gradient.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #1cae49;
+}
 
 /******************         Header          **********************/
 
@@ -80,8 +86,6 @@ img {
 /******************         Landing Page          **********************/
 
 .landing-page__container {
-    background-image: url(assets/imgs/background-img-green-gradient.jpg);
-    background-size: cover;
     padding-bottom: 64px;
 
 }
@@ -108,10 +112,6 @@ img {
 }
 /******************         Entry Page          **********************/
 
-.entry-page__container {
-    background-color: #1cae49;
-}
-
 .entry-page__left-section, .entry-page__right-section {
 	display: none;
 }
@@ -126,26 +126,62 @@ img {
     font-weight: 100;
 }
 
+.entry-page__instruction-subtext {
+    margin: 0 0 5px;
+    font-family: Arial;
+    font-size: 27px;
+    line-height: 27px;
+    text-align: center;
+    color: #0b5a2d;
+    font-weight: 100;	
+}
+
+.entry-page__form-instruction {
+    color: white;
+    text-align: center;	
+}
+
 .form__field-holder input {
     display: block;
     margin: 0 auto;
     width: 80%;
+    height: 45px;
+    border: 1px solid black;
+}
+
+#submit {
+    background-image: url(assets/imgs/submit-btn.png);
+    width: 235px;
+    height: 65px;
+    background-color: transparent;
+    margin: 30px auto;
+    border: none;
+    background-repeat: no-repeat;
+    border-radius: 45px;
+}
+
+#ageCheck, #emailOptIn, #sweepOptIn {
+    height: auto;
 }
 
 @media screen and (min-width: 768px) {
-	.entry-page__left-section, .entry-page__right-section {
-		display: block;
-	}
+
 
 	.entry-page__container {
 	    display: flex;
 	    align-items: flex-end;
 	    justify-content: center;
+	    padding: 40px 10px 0px;
+	    margin-bottom: 0px;
 	}
 
 	.entry-page__middle-section {
 		padding: 0px 50px;
-		width: 40%;
+		width: auto;
+	}
+
+	.form__field-holder {
+	    color: white;
 	}
 
 	.form__split-2-container, .form__codes-container {
@@ -163,7 +199,7 @@ img {
 	}
 	
 	.form__field-holder input {
-		margin: 0px 0px 5px;
+		margin: 0px 0px 25px;
 		width: 100%;
 	}
 
@@ -196,4 +232,13 @@ img {
 	    width: 290px;
 	}
 
+}
+
+@media screen and (min-width: 1100px) {
+	.entry-page__left-section, .entry-page__right-section {
+		display: block;
+	}
+	.entry-page__middle-section {
+	    width: 50%;
+	}
 }

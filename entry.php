@@ -1,13 +1,13 @@
 <?php ?>
-<div class="entry-page__container">
+<div class="entry-page__container green-bg-gradient">
 	<div class="entry-page__left-section">
 		<img src="assets/imgs/jj-two-boxes-stacked.png">
 	</div>
 	<div class="entry-page__middle-section">
 		<div class="entry-page__instruction-container">
 			<h1 class="entry-page__instruction-title">Register and submit 3 product codes to receive a Fandango movie ticket.</h1>
-			<h2>(Valid for Disney•Pixar’s Incredibles 2 or any other Disney movie. Up to $7.50 total value.)</h2>
-			<p>ALL FIELDS REQUIRED UNLESS INDICATED</p>
+			<h2 class="entry-page__instruction-subtext">(Valid for Disney•Pixar’s Incredibles 2 or any other Disney movie. Up to $7.50 total value.)</h2>
+			<p class="entry-page__form-instruction">ALL FIELDS REQUIRED UNLESS INDICATED</p>
 		</div>
 		<form>
 			<div class="form__split-2-container">
@@ -69,7 +69,7 @@
 				<div class="g-recaptcha" data-sitekey="6LcP2FQUAAAAAKR6_Fl0U6uw640gCz_0-fHNX-Sk"></div>
 			</div>
 			<div class="form__field-holder ">
-				<input type="submit" name="submit" id="submit" >
+				<input type="submit" name="submit" id="submit" value="" >
 			</div>
 		</form>
 	</div>
