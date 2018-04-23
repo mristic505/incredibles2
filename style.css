@@ -4,8 +4,15 @@ body {
 	font-family: sans-serif;
 }
 
+img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
 
 /******************         Header          **********************/
+
 .header {
     border-bottom: 6px solid #000000;
 }
@@ -19,20 +26,17 @@ body {
 .header__incredibles-hero-container {
 	line-height: 0;
 }
+
 .header__incredibles-hero-img {
-	max-width: 100%;
+	width: 100%;
 }
 
 .header__jj-logo-img {
-    display: block;
-    max-width: 100%;
     margin: 0px auto;
     padding: 10px 0px;
 }
 
-
 /******************         Footer          **********************/
-
 
 .footer {
     border-top: 6px solid black;
@@ -45,6 +49,7 @@ body {
     margin: 0px auto;
     padding: 20px 0px 40px;	
 }
+
 .footer p {
     color: #1f5733;
     font-size: 0.7rem;
@@ -71,4 +76,124 @@ body {
 	.footer p {
 	    font-size: 1.1rem;
 	}
+}
+/******************         Landing Page          **********************/
+
+.landing-page__container {
+    background-image: url(assets/imgs/background-img-green-gradient.jpg);
+    background-size: cover;
+    padding-bottom: 64px;
+
+}
+
+.landing-page__top-section {
+    display: block;
+    padding: 20px 20px;	
+}
+
+@media screen and (min-width: 1200px) {
+	.landing-page__top-section {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    padding: 110px 20px 60px;
+	}	
+
+	.landing-page__text-section {
+	    position: relative;
+	    left: 63px;
+	    bottom: 51px;	
+        width: 50%;	
+	}
+}
+/******************         Entry Page          **********************/
+
+.entry-page__container {
+    background-color: #1cae49;
+}
+
+.entry-page__left-section, .entry-page__right-section {
+	display: none;
+}
+
+.entry-page__instruction-title {
+    margin: 0 0 5px;
+    font-family: Arial;
+    line-height: 45px;
+    font-size: 47px;
+    text-align: center;
+    color: #0b5a2d;
+    font-weight: 100;
+}
+
+.form__field-holder input {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+	.entry-page__left-section, .entry-page__right-section {
+		display: block;
+	}
+
+	.entry-page__container {
+	    display: flex;
+	    align-items: flex-end;
+	    justify-content: center;
+	}
+
+	.entry-page__middle-section {
+		padding: 0px 50px;
+		width: 40%;
+	}
+
+	.form__split-2-container, .form__codes-container {
+	    display: flex;
+	    justify-content: space-between;
+	}
+
+	.form__codes-container {
+		text-align: center;
+
+	}
+
+	.form__codes-container input {
+		width: auto;
+	}
+	
+	.form__field-holder input {
+		margin: 0px 0px 5px;
+		width: 100%;
+	}
+
+	.form__first-name,
+	.form__last-name,
+	.form__email,
+	.form__confirm-email {
+		width: 40%;
+	}
+
+	.form__phone-number {
+	    margin: auto;
+	    width: 40%;
+	}
+
+	#ageCheck, 
+	#emailOptIn,
+	#sweepOptIn {	
+	    display: inline-block;
+	    width: auto;
+	}
+
+	.form__checkbox-container {
+		text-align: center;
+	}
+
+	.g-recaptcha {
+	    margin: auto;
+	    display: block;
+	    width: 290px;
+	}
+
 }
