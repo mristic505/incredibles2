@@ -13,6 +13,6 @@
 		</div>
 	</div>
 	<div class="landing-page__enter-btn-container">
-			<a href="?page=enter"><img src="assets/imgs/get-started-btn.png"></a>
+			<a href="?page=enter"><img class="btn-get-started" src="assets/imgs/get-started-btn.png"></a>
 	</div>
 </div>

@@ -116,6 +116,10 @@ img {
     margin: 30px auto;
 }
 
+.btn-get-started {
+    max-width: 200px;
+}
+
 @media screen and (min-width: 1000px) {
 	.landing-page__top-section {
 	    display: flex;
@@ -130,6 +134,10 @@ img {
 	    bottom: 51px;	
         width: 50%;	
 	}
+    .btn-get-started {
+        max-width: 100%;
+    }
+
 }
 /******************         Entry Page          **********************/
 
