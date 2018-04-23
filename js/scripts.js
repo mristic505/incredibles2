@@ -11,7 +11,8 @@ jQuery(document).ready(function($){
 	        data: {
 	            firstName : $('#firstName').val(),
 	            lastName : $('#lastName').val(),
-	            email : $('#confirmEmail').val(),
+	            email : $('#email').val(),
+	            confirmEmail : $('#confirmEmail').val(),
 	            phoneNumber : $('#phoneNumber').val(),
 	            firstCode : $('#firstCode').val(),
 	            secondCode : $('#secondCode').val(),
@@ -19,7 +20,7 @@ jQuery(document).ready(function($){
 	            ageCheck : $('#ageCheck').val(),
 	            emailOptIn : $('#emailOptIn').val(),
 	            sweepOptIn : $('#sweepOptIn').val(),
-	            recaptcha: grecaptcha.getResponse()
+	            // recaptcha: grecaptcha.getResponse()
 	        },
 	        dataType: 'jsonp',
 	        crossDomain: true,
