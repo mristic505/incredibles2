@@ -388,7 +388,7 @@ img {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 60px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -453,15 +453,12 @@ img {
     margin: 20px auto;        
 }
 
-.codeModalTitle {
-
-}
-
 #adventureModal {
     font-size: 12px;
     color: white;
     text-decoration: underline;
-    text-align: center;    
+    text-align: center;
+    cursor: pointer;   
 }
 
 @media screen and (min-width: 768px) {
@@ -470,22 +467,15 @@ img {
     }
 
     .codeModalText {
-        font-size: 32px;
-        font-family: Arial;
-        color: white;
-        text-align: center;
+        font-size: 24px;
+    }
+
+    .code-image-examples {
         max-width: 80%;
-        margin: 20px auto;        
     }
 
     .adventureText {
-    
-        font-family: Arial;
-        font-size: 48px;
-        color: white;
-        text-align: center;
-        max-width: 95%;
-        margin: auto;        
+        font-size: 28px;      
     }
 
     /* The Close Button */
