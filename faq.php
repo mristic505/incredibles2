@@ -1,20 +1,16 @@
 <?php ?>
 
 <div class="faq__body green-bg-gradient">
-<!-- 	<h2 class="faq__title">JUICY JUICE® “INCREDIBLE FAMILY ADVENTURE” OFFER & SWEEPSTAKES May 1 – October 31, 2018</h2> -->
-
 	<img class="faq__title-img" src="assets/imgs/faq-title-img.png">
-	<!-- <h2 class="faq__title">Frequently asked questions</h2> -->
-
 	<div class="faq__container">
 		<h3 class="faq__question">What are the promotion dates?</h3>
 		<p class="faq__answer">The promotion runs from 12:00PM EST, May 1, 2018 to 4:59PM EST, October 31, 2018. Fandango Promotional Code must be redeemed by March 31, 2019.</p>
 	</div>
 
 	<div class="faq__container">
-		<h3 class="faq__question">How does the free movie ticket offer offer and sweepstakes work?</h3>
+		<h3 class="faq__question">How does the free movie ticket offer and sweepstakes work?</h3>
 		<p class="faq__answer no-b-margin">To participate in the Offer:</p>
-		<p class="faq__answer">During the Promotion Period, you must purchase three (3) of the specially-marked Disney•Pixar’s Incredibles 2 Limited Edition Juicy Juice products; visit www.juicyjuice.com/Incredibles2; and follow the instructions by providing your name, email address and three (3) unique codes (found in pack) to receive one (1) Fandango Promotional Code. With 3 in-pack codes and validation verification you will receive an email  with a Fandango Promotional Code good towards one movie ticket (up to $7.50 total ticket and  convenience fee value) to see Incredibles 2 or any Disney movie, while supplies last. All codes must only be used once and must be validated prior to receipt of the Fandango Promotional Code. All offer participants who have successfully received a Fandango Promotional Code will be automatically entered into the Sweepstakes.</p>
+		<p class="faq__answer">During the Promotion Period, you must purchase three (3) of the specially-marked Disney•Pixar’s Incredibles 2 Limited Edition Juicy Juice products; visit <a href="http://www.juicyjuice.com/Incredibles2">www.juicyjuice.com/Incredibles2</a>; and follow the instructions by providing your name, email address and three (3) unique codes (found in pack) to receive one (1) Fandango Promotional Code. With 3 in-pack codes and validation verification you will receive an email  with a Fandango Promotional Code good towards one movie ticket (up to $7.50 total ticket and  convenience fee value) to see Incredibles 2 or any Disney movie, while supplies last. All codes must only be used once and must be validated prior to receipt of the Fandango Promotional Code. All offer participants who have successfully received a Fandango Promotional Code will be automatically entered into the Sweepstakes.</p>
 	</div>
 
 	<div class="faq__container">
@@ -69,7 +65,7 @@
 	<div class="faq__container">
 		<h3 class="faq__question">When is the last day to submit the codes for the free movie ticket offer/sweepstakes entry?</h3>
 		<p class="faq__answer">October 31, 2018 at 4:59 p.m. ET</p>
-		<p class="faq__answer">Movie Ticket Winners</p>
+		<p class="faq__answer movie-tix-winners">Movie Ticket Winners</p>
 	</div>
 	<div class="faq__container">
 		<h3 class="faq__question">How do I purchase movie tickets with my Fandango Promotional Code?</h3>
@@ -87,7 +83,7 @@
 	</div>
 	<div class="faq__container">
 		<h3 class="faq__question">What are the Fandango Promotional Code Terms and Conditions?</h3>
-		<p class="faq__answer">Fandango Promotional Code is good towards one movie ticket (up to $7.50 total ticket and convenience fee value) to see The Incredibles 2 or any other Disney movie at Fandango partner theaters in the U.S. Fandango Promotional Code must be redeemed by 3/31/2019 and is void if not redeemed by the expiration date. Only valid for purchase of movie tickets made at <a target="_blank" href="www.fandango.com/promo/">www.fandango.com/promo/</a>juicyjuice or via the Fandango app and cannot be redeemed directly at any Fandango partner theater box office. If lost or stolen, cannot be replaced and there will be no refunds. No cash value. Not valid with any other offer. Offer valid for one-time use only. Not for resale; void if sold or exchanged. If cost of movie ticket with Fandango’s convenience fee included is more than maximum value of the Fandango Promotional Code, then user must pay the difference. Fandango Loyalty Solutions, LLC is not a sponsor or co-sponsor of this program. The redemption of Fandango Promotional Code is subject to Fandango’s Terms and Policies at www.fandango.com/terms-and-policies. All Rights Reserved.
+		<p class="faq__answer">Fandango Promotional Code is good towards one movie ticket (up to $7.50 total ticket and convenience fee value) to see The Incredibles 2 or any other Disney movie at Fandango partner theaters in the U.S. Fandango Promotional Code must be redeemed by 3/31/2019 and is void if not redeemed by the expiration date. Only valid for purchase of movie tickets made at <a target="_blank" href="www.fandango.com/promo/juicyjuice">www.fandango.com/promo/juicyjuice</a> or via the Fandango app and cannot be redeemed directly at any Fandango partner theater box office. If lost or stolen, cannot be replaced and there will be no refunds. No cash value. Not valid with any other offer. Offer valid for one-time use only. Not for resale; void if sold or exchanged. If cost of movie ticket with Fandango’s convenience fee included is more than maximum value of the Fandango Promotional Code, then user must pay the difference. Fandango Loyalty Solutions, LLC is not a sponsor or co-sponsor of this program. The redemption of Fandango Promotional Code is subject to Fandango’s Terms and Policies at <a href="www.fandango.com/terms-and-policies" target="_blank">www.fandango.com/terms-and-policies</a>. All Rights Reserved.
 </p>
 	</div>
 	<div class="faq__container">
