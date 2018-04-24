@@ -11,7 +11,7 @@
 			</div>
 		</div>
 		<div class="landing-page__promo-img-container">
-			<img src="assets/imgs/juicyJuice-bundle-large.png">		
+			<img src="assets/imgs/juicyJuice-bundle-largev2.png">		
 		</div>
 	</div>
 	<div class="landing-page__enter-btn-container hide-on-mobile">
