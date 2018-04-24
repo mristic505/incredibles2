@@ -432,7 +432,7 @@ img {
     text-align: center;
     color: #0b5a2d;
     margin: 30px auto;
-    font-size: 30px;
+    font-size: 19px;
     font-family: Arial;
     font-weight: 100;	
 }
@@ -442,6 +442,11 @@ img {
     padding-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+    .thank-you__title {
+        font-size: 30px;
+    }
+}
 
 
 /******************         Rules Page          **********************/
