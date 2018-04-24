@@ -15,6 +15,14 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'Helvetica-Condensed';
+    src: url('fonts/Helvetica-CondensedBold.woff2') format('woff2'),
+        url('fonts/Helvetica-CondensedBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
 /******************         Global          **********************/
 
 body {
@@ -47,7 +55,7 @@ img {
 }
 
 .header__incredibles-hero-container {
-	line-height: 0;
+	position: relative;
 }
 
 .header__incredibles-hero-img {
@@ -57,6 +65,13 @@ img {
 .header__jj-logo-img {
     margin: 0px auto;
     padding: 10px 0px;
+    width: 75px;
+}
+
+@media screen and (min-width: 768px) {
+   .header__jj-logo-img {
+    width: auto;
+   }
 }
 
 /******************         Footer          **********************/
@@ -104,20 +119,40 @@ img {
 
 .landing-page__container {
     padding-bottom: 64px;
-
 }
 
 .landing-page__top-section {
     display: block;
-    padding: 20px 20px;	
+    padding: 20px 0px 0px;
 }
 
 .landing-page_subtext {
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 .btn-get-started {
-    max-width: 200px;
+    width: 200px;
+}
+
+.landing-page__text-section img {
+    width: 70%;
+}
+
+.landing-logo-text {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .landing-logo-text {
+        position: absolute;
+        bottom: 4px;
+        left: 7px;
+        margin: 0;
+        color: #ffffff;
+        display: block;
+        font-size: 0.9vw;
+        /*font-family: 'Helvetica-Condensed';*/
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -125,20 +160,20 @@ img {
 	    display: flex;
 	    align-items: center;
 	    justify-content: center;
-	    padding: 110px 20px 60px;
+	    padding: 50px 20px 0px;
 	}	
 
 	.landing-page__text-section {
-	    position: relative;
-	    left: 63px;
-	    bottom: 51px;	
-        width: 50%;	
+        position: relative;
+        left: 72px;
+        bottom: 31px;
+        width: 70%;
 	}
     .btn-get-started {
-        max-width: 100%;
+        width: 250px;
     }
-
 }
+
 /******************         Entry Page          **********************/
 
 .entry-page__container {
@@ -186,6 +221,7 @@ img {
     width: 80%;
     height: 45px;
     border: 1px solid black;
+    padding-left: 10px;
 }
 
 #submit {
@@ -228,12 +264,15 @@ img {
 .form__age-check,
 .form__email-opt-in,
 .form__sweep-opt-in {
-    margin-bottom: 15px;
+    margin-bottom: 35px;
+    text-align: left;
+    padding: 0px 30px;
 }
 
 .form__captcha {
     display: flex;
     justify-content: center;
+    margin-right: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -321,8 +360,15 @@ img {
 		display: block;
 	}
 	.entry-page__middle-section {
-	    width: 50%;
+	    width: 80%;
 	}
+    .form__age-check,
+    .form__email-opt-in,
+    .form__sweep-opt-in {
+        padding: 0px 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
 /******************         Thank You Page          **********************/
 
@@ -495,7 +541,7 @@ img {
 }
 
 .codeModalText {
-    font-size: 19px;
+    font-size: 12px;
     font-family: Arial;
     color: white;
     text-align: center;
@@ -510,6 +556,24 @@ img {
     text-align: center;
     cursor: pointer;   
 }
+.small-width-mobile {
+    width: 70%;
+    margin-top: 20px;
+}
+
+.green-bg-gradient--pop-up {
+    background-image: url(assets/imgs/background-img-green-gradient.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 30%;
+    background-color: #1cae49;    
+}
+
+.green-bg-gradient--pop-up-code {
+    background-image: url(assets/imgs/background-img-green-gradient.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 48%;
+    background-color: #1cae49;   
+}
 
 @media screen and (min-width: 768px) {
     .codeModalText {
@@ -517,8 +581,8 @@ img {
         margin-top: 10px;
     }
     .codeModalTitle {
-        padding: 40px 0px 0px;
-        max-width: 60%;
+        padding: 30px 0px 0px;
+        max-width: 70%;
     }
 
     .code-image-examples {

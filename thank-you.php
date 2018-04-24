@@ -7,7 +7,6 @@
 	<div class="social-media-container">
 		<a href="#"><img src="assets/imgs/facebook-logo.png"></a>
 		<a class="socia-media__horozontal-margin" href="#"><img src="assets/imgs/twitter-logo.png"></a>
-		<a href="#"><img src="assets/imgs/instagram-logo.png"></a>
 	</div>	
 		<img src="assets/imgs/juicyJuice-bundle-large.png">
 </div>

@@ -52,15 +52,15 @@
 				<p class="faq__code-text" id="faq__code-modal">Where's my code?</p>
 			</div>
 			<div class="form__checkbox-container">
-				<div class="form__field-holder no-b-margin form__age-check">
+				<div class="form__field-holder form__age-check">
 					<input type="checkbox" name="ageCheck" id="ageCheck" required>
 					<label for="ageCheck">I am 18 years or older. I’ve read and agree to the <a class="official-rules-link" href="?page=rules">Official Rules</a> of the promotion.</label>
 				</div>
-				<div class="form__field-holder no-b-margin form__email-opt-in">
+				<div class="form__field-holder form__email-opt-in">
 					<input type="checkbox" name="emailOptIn" id="emailOptIn" value="1" checked="">
 					<label for="emailOptIn">I would like to receive offers and information from Juicy Juice®. (optional)</label>
 				</div>
-				<div class="form__field-holder no-b-margin form__sweep-opt-in">
+				<div class="form__field-holder form__sweep-opt-in">
 					<input type="checkbox" name="sweepOptIn" id="sweepOptIn" required>
 					<label for="sweepOptIn">I acknowledge that I will be entered into the Incredible Family Adventure Sweepstakes.</label>
 				</div>
@@ -89,7 +89,7 @@
 <div id="codeModal" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content green-bg-gradient">
+  <div class="modal-content green-bg-gradient--pop-up-code">
     <span class="close">&times;</span>
 	<img class="codeModalTitle" srcset="assets/imgs/how-to-find-your-code-txt.png">
 	<p class="codeModalText">Check under the labels of specially-marked Disney/Pixar® Incredibles 2 Juicy Juice® packages to locate your code.</p>
@@ -100,11 +100,11 @@
 <div id="adventureModalpopup" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content green-bg-gradient">
+  <div class="modal-content green-bg-gradient--pop-up">
     <span class="close2">&times;</span>
 	<img class="adv-title-img" src="assets/imgs/modal-family-adv-title.png">
 	<p class="adventureText">With every movie ticket reward, you’ll be entered for a chance win $10,000 towards a trip of your choice. Where you go on your incredible family adventure is totally up to you!</p>
-	<img src="assets/imgs/popup-adventure-logos.png">
+	<img class="small-width-mobile" src="assets/imgs/popup-adventure-logos.png">
   </div>
 
 </div>

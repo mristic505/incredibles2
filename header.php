@@ -19,10 +19,14 @@
 <main>
 	<header class="header">
 		<div class="header__jj-logo-container">
-			<img class="header__jj-logo-img" src="assets/imgs/jj-logo.png">
+			<a target="_blank" href="http://juicyjuice.com/"><img class="header__jj-logo-img" src="assets/imgs/jj-logo.png"></a>
 		</div>
 		<section class="header__incredibles-hero-container">
-			<img class="header__incredibles-hero-img" src="assets/imgs/incredibles-hero-large.jpg">
+			<picture>
+				<source  class="header__incredibles-hero-img" srcset="assets/imgs/LandingPage-Incredibles2-Mobile-June15-min.jpg" media="(max-width: 400px)">
+				<img class="header__incredibles-hero-img" src="assets/imgs/incredibles-hero-large.jpg">
+			</picture>
+			<p class="landing-logo-text">Incredibles 2 &copy; 2018 Disney / Pixar</p>
 		</section>
 		
 	</header>
