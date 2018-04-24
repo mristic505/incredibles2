@@ -24,6 +24,14 @@
 }
 
 /******************         Global          **********************/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 
 body {
 	font-family: sans-serif;
@@ -294,7 +302,32 @@ img {
     margin: 30px auto;
     width: 310px;
 }
+
+
 @media screen and (min-width: 768px) {
+
+    .form__first-code,
+    .form__second-code,
+    .form__third-code {
+        width: 170px;
+    }
+
+    .form__codes-container {
+        width: 100%;
+        text-align: center;        
+    }
+    .form__first-code {
+        float: left;
+    }    
+
+    .form__second-code {
+        display: inline-block;
+        margin: auto;
+    }
+
+    .form__third-code {
+        float: right;
+    }
     .hide-on-mobile {
         display: block;
     }
@@ -327,20 +360,15 @@ img {
 	    color: white;
 	}
 
-	.form__split-2-container, .form__codes-container {
+	.form__split-2-container {
 	    display: flex;
 	    justify-content: space-between;
 	}
 
-	.form__codes-container {
-		text-align: center;
-
-	}
-
-	.form__codes-container input {
-		width: auto;
-	}
-	
+    .form__form-code {
+        float: left;
+        width: 200px;
+    }
 	.form__field-holder input {
 		margin: 0px 0px 25px;
 		width: 100%;
@@ -399,16 +427,6 @@ img {
 	.entry-page__middle-section {
 	    width: 80%;
 	}
-
-    .form__codes-container .has-error input {
-        width: 170px;
-    }
-
-    .has-error #secondCode {
-        position: relative;
-        left: 19px
-    }
-
 }
 /******************         Thank You Page          **********************/
 
