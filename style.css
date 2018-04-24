@@ -397,6 +397,15 @@ img {
 	    width: 80%;
 	}
 
+    .form__codes-container .has-error input {
+        width: 170px;
+    }
+
+    .has-error #secondCode {
+        position: relative;
+        left: 19px
+    }
+
 }
 /******************         Thank You Page          **********************/
 
