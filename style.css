@@ -42,6 +42,13 @@ img {
     background-color: #1cae49;
 }
 
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-bold {
+    font-weight: bold;
+}
 /******************         Header          **********************/
 
 .header {
