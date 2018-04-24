@@ -117,9 +117,6 @@ img {
 }
 /******************         Landing Page          **********************/
 
-.landing-page__container {
-    padding-bottom: 64px;
-}
 
 .landing-page__top-section {
     display: block;
@@ -153,9 +150,14 @@ img {
         font-size: 0.9vw;
         /*font-family: 'Helvetica-Condensed';*/
     }
+
 }
 
 @media screen and (min-width: 1000px) {
+    .landing-page__container {
+        padding-bottom: 64px;
+    }
+
 	.landing-page__top-section {
 	    display: flex;
 	    align-items: center;
@@ -251,7 +253,6 @@ img {
 
 .official-rules-link {
     color: white;
-    text-decoration: none;
     font-weight: bold;    
 }
 
@@ -272,10 +273,28 @@ img {
 .form__captcha {
     display: flex;
     justify-content: center;
-    margin-right: 20px;
 }
 
+.hide-on-mobile {
+    display: none;
+}
+
+.hide-on-desktop {
+    display: block;
+    margin: 30px auto;
+    width: 310px;
+}
 @media screen and (min-width: 768px) {
+    .hide-on-mobile {
+        display: block;
+    }
+    .hide-on-desktop {
+        display: none;
+    }
+    
+    .form__captcha {
+        margin-right: 20px;
+    }
 
     .form__field-holder label {
         margin-bottom: 10px;
@@ -353,6 +372,14 @@ img {
 	    width: 290px;
 	}
 
+    .form__age-check,
+    .form__email-opt-in,
+    .form__sweep-opt-in {
+        padding: 0px 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
 }
 
 @media screen and (min-width: 1100px) {
@@ -362,13 +389,7 @@ img {
 	.entry-page__middle-section {
 	    width: 80%;
 	}
-    .form__age-check,
-    .form__email-opt-in,
-    .form__sweep-opt-in {
-        padding: 0px 30px;
-        text-align: center;
-        margin-bottom: 10px;
-    }
+
 }
 /******************         Thank You Page          **********************/
 
@@ -402,8 +423,7 @@ img {
 
 
 .social-text {
-    text-align: center;
-    color: white;
+    padding-bottom: 20px;
 }
 
 
@@ -499,7 +519,7 @@ img {
     padding: 20px;
     border: 10px solid #fff;
     position: relative;
-    width: 45%;
+    width: 75%;
     border-radius: 12px;
     margin-bottom: 60px;
 }
@@ -541,7 +561,7 @@ img {
 }
 
 .codeModalText {
-    font-size: 12px;
+    font-size: 15px;
     font-family: Arial;
     color: white;
     text-align: center;

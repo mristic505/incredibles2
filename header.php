@@ -23,7 +23,7 @@
 		</div>
 		<section class="header__incredibles-hero-container">
 			<picture>
-				<source  class="header__incredibles-hero-img" srcset="assets/imgs/LandingPage-Incredibles2-Mobile-June15-min.jpg" media="(max-width: 400px)">
+				<source  class="header__incredibles-hero-img" srcset="assets/imgs/LandingPage-Incredibles2-Mobile-June15-min.jpg" media="(max-width: 550px)">
 				<img class="header__incredibles-hero-img" src="assets/imgs/incredibles-hero-large.jpg">
 			</picture>
 			<p class="landing-logo-text">Incredibles 2 &copy; 2018 Disney / Pixar</p>
