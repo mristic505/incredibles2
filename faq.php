@@ -1,7 +1,9 @@
 <?php ?>
 
 <div class="faq__body green-bg-gradient">
-	<img class="faq__title-img" src="assets/imgs/faq-title-img.png">
+	<h1 class="faq__title mobile-b-margin">JUICY JUICE<sup>&reg;</sup> “INCREDIBLE FAMILY ADVENTURE” OFFER &amp; SWEEPSTAKES</h1>
+	<h2 class="faq__title mobile-b-margin">MAY 1 – OCTOBER 31, 2018</h2>
+	<h2 class="faq__title mobile-b-margin desktop-b-margin">FREQUENTLY ASKED QUESTIONS</h2>
 	<div class="faq__container">
 		<h3 class="faq__question">What are the promotion dates?</h3>
 		<p class="faq__answer">The promotion runs from 12:00PM EST, May 1, 2018 to 4:59PM EST, October 31, 2018. Fandango Promotional Code must be redeemed by March 31, 2019.</p>
