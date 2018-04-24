@@ -676,7 +676,9 @@ img {
     color: #B94A48;
     font-weight: bold;
 }
-.has-error input, .has-error .g-recaptcha > div {
+.has-error input[type="text"], 
+.has-error input[type="email"],
+.has-error .g-recaptcha > div {
     border: 1px solid red;
     outline: 1px solid red;
 }
