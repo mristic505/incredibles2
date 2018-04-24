@@ -601,6 +601,10 @@ img {
     background-color: #1cae49;   
 }
 
+.code-image-examples {
+    margin-bottom: 20px; 
+}
+
 @media screen and (min-width: 768px) {
     .codeModalText {
         font-size: 24px;
@@ -613,6 +617,7 @@ img {
 
     .code-image-examples {
         max-width: 80%;
+        margin-bottom: 50px;
     }
 
     .adventureText {

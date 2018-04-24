@@ -93,7 +93,7 @@
   <div class="modal-content green-bg-gradient--pop-up-code">
     <span class="close">&times;</span>
 	<img class="codeModalTitle" srcset="assets/imgs/how-to-find-your-code-txt.png">
-	<p class="codeModalText">Check under the labels of specially-marked Disney/Pixar® Incredibles 2 Juicy Juice® packages to locate your code.</p>
+	<p class="codeModalText">Check under the labels of specially-marked Disney•Pixar's Incredibles 2 Juicy Juice® packages to locate your code.</p>
 	<img class="code-image-examples" src="assets/imgs/code-popup-hero.png">
   </div>
 
