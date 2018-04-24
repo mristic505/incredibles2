@@ -196,19 +196,22 @@ img {
 .entry-page__instruction-title {
     margin: 0 0 5px;
     font-family: Arial;
-    line-height: 45px;
-    font-size: 35px;
+    line-height: 29px;
+    font-size: 28px;
     text-align: center;
     color: #0b5a2d;
     font-weight: 100;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .entry-page__instruction-subtext {
     margin: 0 0 5px;
     font-family: Arial;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 27px;
     text-align: center;
+    padding: 0px 30px;
     color: #0b5a2d;
     font-weight: 100;
 }
