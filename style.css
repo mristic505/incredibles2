@@ -645,8 +645,23 @@ img {
     }
 
 }
-
 .error_message {
     color: #B94A48;
-
+}
+.has-error input, .has-error .g-recaptcha > div {
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(196,10,10,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(196,10,10,1);
+    box-shadow: 0px 0px 5px 1px rgba(196,10,10,1);
+}
+div.form__captcha.has-error {
+    padding: 40px;
+}
+.form__captcha .error_message {
+    margin-top: 25px;
+}
+.loader {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px auto;
+    opacity: 0;
 }

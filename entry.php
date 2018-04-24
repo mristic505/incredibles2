@@ -7,27 +7,27 @@
 		<div class="entry-page__instruction-container">
 			<h1 class="entry-page__instruction-title">Register and submit 3 product codes to receive a Fandango movie ticket.</h1>
 			<h2 class="entry-page__instruction-subtext">(Valid for Disney•Pixar’s Incredibles 2 or any other Disney movie. Up to $7.50 total value.)</h2>
-			<p class="entry-page__form-instruction">ALL FIELDS REQUIRED UNLESS INDICATED</p>
+			<p class="entry-page__form-instruction">ALL FIELDS  UNLESS INDICATED</p>
 		</div>
 		<form>
 			<div class="form__split-2-container">
 				<div class="form__field-holder form__first-name"> 
 					<label for="firstName">FIRST NAME</label>
-					<input type="text" name="firstName" id="firstName" required>
+					<input type="text" name="firstName" id="firstName" >
 				</div>
 				<div class="form__field-holder form__last-name">
 					<label for="lastName">LAST NAME</label>
-					<input type="text" name="lastName" id="lastName" required>
+					<input type="text" name="lastName" id="lastName" >
 				</div>
 			</div>	
 			<div class="form__split-2-container">
 				<div class="form__field-holder form__email">
 					<label for="email">YOUR EMAIL</label>
-					<input type="email" name="email" id="email" required>
+					<input type="email" name="email" id="email" >
 				</div>
 				<div class="form__field-holder form__confirm-email">
 					<label for="confirmEmail">CONFIRM EMAIL</label>
-					<input type="email" name="confirmEmail" id="confirmEmail" required>
+					<input type="email" name="confirmEmail" id="confirmEmail" >
 				</div>	
 			</div>
 			<div class="form__field-holder form__phone-number">
@@ -53,15 +53,15 @@
 			</div>
 			<div class="form__checkbox-container">
 				<div class="form__field-holder form__age-check">
-					<input type="checkbox" name="ageCheck" id="ageCheck" required>
+					<input type="checkbox" name="ageCheck" id="ageCheck" value="">
 					<label for="ageCheck">I am 18 years or older. I’ve read and agree to the <a class="official-rules-link" href="?page=rules">Official Rules</a> of the promotion.</label>
 				</div>
 				<div class="form__field-holder form__email-opt-in">
-					<input type="checkbox" name="emailOptIn" id="emailOptIn" value="1" checked="">
+					<input type="checkbox" name="emailOptIn" id="emailOptIn" value="yes" checked="">
 					<label for="emailOptIn">I would like to receive offers and information from Juicy Juice®. (optional)</label>
 				</div>
 				<div class="form__field-holder form__sweep-opt-in">
-					<input type="checkbox" name="sweepOptIn" id="sweepOptIn" required>
+					<input type="checkbox" name="sweepOptIn" id="sweepOptIn" >
 					<label for="sweepOptIn">I acknowledge that I will be entered into the Incredible Family Adventure Sweepstakes.</label>
 				</div>
 			</div>
@@ -74,6 +74,7 @@
 			<div class="form__field-holder ">
 				<input type="submit" name="submit" id="submit" value="" >
 			</div>
+			<img class="loader" src="assets/imgs/30.svg">
 		</form>
 	</div>
 	<div class="entry-page__right-section">

@@ -10,6 +10,7 @@ jQuery(document).ready(function($){
     	$('.error_message').each(function(){
     		$(this).remove();
     	});
+    	$('.loader').css('opacity', 1);
 
         $.ajax({
 	        type: 'GET',
@@ -23,36 +24,90 @@ jQuery(document).ready(function($){
 	            firstCode : $('#firstCode').val(),
 	            secondCode : $('#secondCode').val(),
 	            thirdCode : $('#thirdCode').val(),
-	            ageCheck : $('#ageCheck').val(),
-	            emailOptIn : $('#emailOptIn').val(),
-	            sweepOptIn : $('#sweepOptIn').val(),
+	            ageCheck : $('#ageCheck:checked').val(),
+	            emailOptIn : $('#emailOptIn:checked').val(),
+	            sweepOptIn : $('#sweepOptIn:checked').val(),
 	            recaptcha: grecaptcha.getResponse()
 	        },
 	        dataType: 'jsonp',
 	        crossDomain: true,
 	    }).done(function(response){
+	    	$('.loader').css('opacity', 0);
 	        console.log(response);
 	        if(response[0]['success']=true) {
-	        	if(response[0]['message'] == "duplicate_codes_submitted") {
-	        		$('.form__first-code').append('<div class="error_message">Duplicate codes submittedd</div>');
-	        		$('.form__first-code').addClass('has-error');
-	        	}
-	        	if(response[0]['message'] == "already_used") {
-	        		$('.form__first-code').append('<div class="error_message">One or more codes have been already used</div>');
-	        		$('.form__first-code').addClass('has-error');
-	        	}
-	        	if(response[0]['message'] == "codes_not_found") {
-	        		// alert('One or more codes are invalid');
-	        		$('.form__first-code').append('<div class="error_message">One or more codes are invalid</div>');
-	        		$('.form__first-code').addClass('has-error');
-	        	}
-	        	if(response[0]['message'] == "all_codes_found_entry_made") {
-	        		window.location.href = "?page=thank-you";
-	        	}	        	
+	        	
+	        	// if error messages exist	        	
 	        	if (typeof response[0]['errors'] != "undefined") {
 				   if(response[0]['errors']['email'] == "Emails_do_not_match") {
 		        		$('.form__email').append('<div class="error_message">Emails do not match</div>');
 		        		$('.form__email').addClass('has-error');
+		        	}
+		        	// If no first name
+		        	if (typeof response[0]['errors']['firstName'] != "undefined") {
+		        		$('.form__first-name').append('<div class="error_message">'+response[0]['errors']['firstName']+'</div>');
+		        		$('.form__first-name').addClass('has-error');
+		        	}
+		        	// If no last name
+		        	if (typeof response[0]['errors']['lastName'] != "undefined") {
+		        		$('.form__last-name').append('<div class="error_message">'+response[0]['errors']['lastName']+'</div>');
+		        		$('.form__last-name').addClass('has-error');
+		        	}
+		        	// If no email 
+		        	if (typeof response[0]['errors']['email'] != "undefined") {
+		        		$('.form__email').append('<div class="error_message">'+response[0]['errors']['email']+'</div>');
+		        		$('.form__email').addClass('has-error');
+		        	}
+		        	// If no form__confirm-email 
+		        	if (typeof response[0]['errors']['confirmEmail'] != "undefined") {
+		        		$('.form__confirm-email').append('<div class="error_message">'+response[0]['errors']['confirmEmail']+'</div>');
+		        		$('.form__confirm-email').addClass('has-error');
+		        	}
+		        	// If no firstCode 
+		        	if (typeof response[0]['errors']['firstCode'] != "undefined") {
+		        		$('.form__first-code').append('<div class="error_message">'+response[0]['errors']['firstCode']+'</div>');
+		        		$('.form__first-code').addClass('has-error');
+		        	}
+		        	// If no second code
+		        	if (typeof response[0]['errors']['secondCode'] != "undefined") {
+		        		$('.form__second-code').append('<div class="error_message">'+response[0]['errors']['secondCode']+'</div>');
+		        		$('.form__second-code').addClass('has-error');
+		        	}
+		        	// If no third code
+		        	if (typeof response[0]['errors']['thirdCode'] != "undefined") {
+		        		$('.form__third-code').append('<div class="error_message">'+response[0]['errors']['thirdCode']+'</div>');
+		        		$('.form__third-code').addClass('has-error');
+		        	}
+		        	// If no age confirmation
+		        	if (typeof response[0]['errors']['ageCheck'] != "undefined") {
+		        		$('.form__age-check').append('<div class="error_message">'+response[0]['errors']['ageCheck']+'</div>');
+		        		$('.form__age-check').addClass('has-error');
+		        	}
+		        	// If no sweepstakes acknowledgment
+		        	if (typeof response[0]['errors']['sweepOptIn'] != "undefined") {
+		        		$('.form__sweep-opt-in').append('<div class="error_message">'+response[0]['errors']['sweepOptIn']+'</div>');
+		        		$('.form__sweep-opt-in').addClass('has-error');
+		        	}
+		        	// If captcha was not ckecked
+		        	if (typeof response[0]['errors']['recaptcha'] != "undefined") {
+		        		$('.g-recaptcha > div').append('<div class="error_message">'+response[0]['errors']['recaptcha']+'</div>');
+		        		$('.form__captcha').addClass('has-error');
+		        	}
+				}
+				else {
+					if(response[0]['message'] == "duplicate_codes_submitted") {
+		        		$('.form__first-code').append('<div class="error_message">Duplicate codes submittedd</div>');
+		        		$('.form__first-code').addClass('has-error');
+		        	}
+		        	if(response[0]['message'] == "already_used") {
+		        		$('.form__first-code').append('<div class="error_message">One or more codes have been already used</div>');
+		        		$('.form__first-code').addClass('has-error');
+		        	}
+		        	if(response[0]['message'] == "codes_not_found") {
+		        		$('.form__first-code').append('<div class="error_message">One or more codes are invalid</div>');
+		        		$('.form__first-code').addClass('has-error');
+		        	}
+		        	if(response[0]['message'] == "all_codes_found_entry_made") {
+		        		window.location.href = "?page=thank-you";
 		        	}
 				}
 	        }
