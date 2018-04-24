@@ -58,7 +58,7 @@
 				</div>
 				<div class="form__field-holder form__email-opt-in">
 					<input type="checkbox" name="emailOptIn" id="emailOptIn" value="yes" checked="">
-					<label for="emailOptIn">I would like to receive offers and information from Juicy Juice®. (optional)</label>
+					<label for="emailOptIn">I would like to receive offers and information from Juicy Juice<sup>&reg;</sup>. (optional)</label>
 				</div>
 				<div class="form__field-holder form__sweep-opt-in">
 					<input type="checkbox" name="sweepOptIn" id="sweepOptIn" >
