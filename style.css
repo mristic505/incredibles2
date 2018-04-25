@@ -154,11 +154,15 @@ img {
     width: 200px;
 }
 
-.landing-page__text-section img {
-    width: 70%;
+.landing-logo-text {
+    display: none;
 }
 
-.landing-logo-text {
+.landing-page__promo-img-container {
+    position: relative;
+    right: 3%;
+}
+.hide-on-mobile-landing {
     display: none;
 }
 
@@ -174,6 +178,13 @@ img {
         /*font-family: 'Helvetica-Condensed';*/
     }
 
+        .hide-on-mobile-landing {
+            display: block;
+        }
+        .hide-on-desktop2 {
+            display: none;
+        }
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -183,21 +194,29 @@ img {
     }
 
 	.landing-page__top-section {
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	    padding: 50px 20px 0px;
+        overflow: hidden;
 	}	
 
 	.landing-page__text-section {
         position: relative;
-        left: 72px;
-        bottom: 31px;
-        width: 60%;
+        width: 40vw;
+        left: 5vw;
+        float: left;
+        
 	}
     .btn-get-started {
         width: 250px;
     }
+
+    .landing-page__promo-img-container {
+        float: left;
+        width: 56vw;
+        position: absolute;
+        right: 25px;     
+        left: auto;
+    }
+
+
 }
 
 /******************         Entry Page          **********************/
