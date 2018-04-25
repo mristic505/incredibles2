@@ -54,7 +54,7 @@
 			<div class="form__checkbox-container">
 				<div class="form__field-holder form__age-check">
 					<input type="checkbox" name="ageCheck" id="ageCheck" value="">
-					<label for="ageCheck">I am 18 years or older. I’ve read and agree to the <a class="official-rules-link" href="?page=rules">Official Rules</a> of the promotion.</label>
+					<label for="ageCheck">I am 18 years or older. I’ve read and agree to the <a target="_blank" class="official-rules-link" href="?page=rules">Official Rules</a> of the promotion.</label>
 				</div>
 				<div class="form__field-holder form__email-opt-in">
 					<input type="checkbox" name="emailOptIn" id="emailOptIn" value="yes" checked="">

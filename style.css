@@ -311,6 +311,27 @@ img {
     width: 310px;
 }
 
+@media screen and (max-width: 767px) {
+    input[type=checkbox] {
+        -ms-transform: scale(2);
+        -moz-transform: scale(2);
+        -webkit-transform: scale(2);
+        -o-transform: scale(2);
+         padding: 10px; 
+         margin-right: 10px;
+         float: left;
+        position: relative;
+        top: 5px;
+    }
+    #ageCheck, #emailOptIn, #sweepOptIn {
+        height: 11px;
+    }
+    .form__age-check label, .form__email-opt-in label, .form__sweep-opt-in label {
+        margin-left: 20px;
+        display: block;
+    }
+}
+
 
 @media screen and (min-width: 768px) {
 
