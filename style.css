@@ -93,7 +93,7 @@ img {
 
 @media screen and (min-width: 768px) {
    .header__jj-logo-img {
-    width: auto;
+    width: 150px;
    }
 }
 
@@ -179,6 +179,7 @@ img {
 @media screen and (min-width: 1000px) {
     .landing-page__container {
         padding-bottom: 64px;
+        padding-top: 60px;
     }
 
 	.landing-page__top-section {
