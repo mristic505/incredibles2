@@ -109,6 +109,10 @@ jQuery(document).ready(function($){
 		        	if(response[0]['message'] == "all_codes_found_entry_made") {
 		        		window.location.href = "?page=thank-you";
 		        	}
+		        	if(response[0]['message'] == "played_4_times_this_month") {
+		        		$('.form__codes-container').append('<div style="overflow:hidden;display:block;" class="error_message">You already entered 4 times this month.</div>');
+		        		$('.form__codes-container').addClass('has-error');
+		        	}
 				}
 	        }
 	        
