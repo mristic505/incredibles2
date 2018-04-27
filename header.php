@@ -23,7 +23,7 @@
 <main>
 	<header class="header">
 		<div class="header__jj-logo-container">
-			<a target="_blank" href="http://juicyjuice.com/"><img class="header__jj-logo-img" src="assets/imgs/jj-logo.png"></a>
+			<a target="_blank" href="http://juicyjuice.com/"><img class="header__jj-logo-img" src="assets/imgs/jj-logo-01.svg"></a>
 		</div>
 		<section class="header__incredibles-hero-container">
 			<picture>

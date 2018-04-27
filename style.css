@@ -23,7 +23,23 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Din-Condensed';
+    src: url('fonts/D-DINCondensed-Bold.woff2') format('woff2'),
+        url('fonts/D-DINCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
 /******************         Global          **********************/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 
 body {
 	font-family: sans-serif;
@@ -77,7 +93,7 @@ img {
 
 @media screen and (min-width: 768px) {
    .header__jj-logo-img {
-    width: auto;
+    width: 150px;
    }
 }
 
@@ -138,11 +154,15 @@ img {
     width: 200px;
 }
 
-.landing-page__text-section img {
-    width: 70%;
+.landing-logo-text {
+    display: none;
 }
 
-.landing-logo-text {
+.landing-page__promo-img-container {
+    position: relative;
+    right: 3%;
+}
+.hide-on-mobile-landing {
     display: none;
 }
 
@@ -158,29 +178,45 @@ img {
         /*font-family: 'Helvetica-Condensed';*/
     }
 
+        .hide-on-mobile-landing {
+            display: block;
+        }
+        .hide-on-desktop2 {
+            display: none;
+        }
+
 }
 
 @media screen and (min-width: 1000px) {
     .landing-page__container {
         padding-bottom: 64px;
+        padding-top: 60px;
     }
 
 	.landing-page__top-section {
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	    padding: 50px 20px 0px;
+        overflow: hidden;
 	}	
 
 	.landing-page__text-section {
         position: relative;
-        left: 72px;
-        bottom: 31px;
-        width: 60%;
+        width: 40vw;
+        left: 5vw;
+        float: left;
+        
 	}
     .btn-get-started {
         width: 250px;
     }
+
+    .landing-page__promo-img-container {
+        float: left;
+        width: 56vw;
+        position: absolute;
+        right: 25px;     
+        left: auto;
+    }
+
+
 }
 
 /******************         Entry Page          **********************/
@@ -196,19 +232,22 @@ img {
 .entry-page__instruction-title {
     margin: 0 0 5px;
     font-family: Arial;
-    line-height: 45px;
-    font-size: 35px;
+    line-height: 29px;
+    font-size: 28px;
     text-align: center;
     color: #0b5a2d;
     font-weight: 100;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .entry-page__instruction-subtext {
     margin: 0 0 5px;
     font-family: Arial;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 27px;
     text-align: center;
+    padding: 0px 30px;
     color: #0b5a2d;
     font-weight: 100;
 }
@@ -291,7 +330,53 @@ img {
     margin: 30px auto;
     width: 310px;
 }
+
+@media screen and (max-width: 767px) {
+    input[type=checkbox] {
+        -ms-transform: scale(2);
+        -moz-transform: scale(2);
+        -webkit-transform: scale(2);
+        -o-transform: scale(2);
+         padding: 10px; 
+         margin-right: 10px;
+         float: left;
+        position: relative;
+        top: 5px;
+    }
+    #ageCheck, #emailOptIn, #sweepOptIn {
+        height: 11px;
+    }
+    .form__age-check label, .form__email-opt-in label, .form__sweep-opt-in label {
+        margin-left: 20px;
+        display: block;
+    }
+}
+
+
 @media screen and (min-width: 768px) {
+
+    .form__first-code,
+    .form__second-code,
+    .form__third-code {
+        width: 170px;
+    }
+
+    .form__codes-container {
+        width: 100%;
+        text-align: center;        
+    }
+    .form__first-code {
+        float: left;
+    }    
+
+    .form__second-code {
+        display: inline-block;
+        margin: auto;
+    }
+
+    .form__third-code {
+        float: right;
+    }
     .hide-on-mobile {
         display: block;
     }
@@ -324,20 +409,15 @@ img {
 	    color: white;
 	}
 
-	.form__split-2-container, .form__codes-container {
+	.form__split-2-container {
 	    display: flex;
 	    justify-content: space-between;
 	}
 
-	.form__codes-container {
-		text-align: center;
-
-	}
-
-	.form__codes-container input {
-		width: auto;
-	}
-	
+    .form__form-code {
+        float: left;
+        width: 200px;
+    }
 	.form__field-holder input {
 		margin: 0px 0px 25px;
 		width: 100%;
@@ -396,16 +476,6 @@ img {
 	.entry-page__middle-section {
 	    width: 80%;
 	}
-
-    .form__codes-container .has-error input {
-        width: 170px;
-    }
-
-    .has-error #secondCode {
-        position: relative;
-        left: 19px
-    }
-
 }
 /******************         Thank You Page          **********************/
 
@@ -432,7 +502,7 @@ img {
     text-align: center;
     color: #0b5a2d;
     margin: 30px auto;
-    font-size: 30px;
+    font-size: 19px;
     font-family: Arial;
     font-weight: 100;	
 }
@@ -442,6 +512,11 @@ img {
     padding-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+    .thank-you__title {
+        font-size: 30px;
+    }
+}
 
 
 /******************         Rules Page          **********************/
@@ -453,10 +528,12 @@ img {
 .rules__title {
     max-width: 90%;
     margin: 0px auto 30px;
-    padding-top: 70px;
-    font-size: 50px;
+    padding-top: 40px;
+    font-size: 33px;
     color: #ffffff;
     text-align: center; 
+    text-shadow: 1px 1px 1px #000000b0;
+    font-family: 'Din-Condensed';
 }
 
 .rules__title-img {
@@ -468,7 +545,7 @@ img {
     max-width: 90%;
     margin: auto;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     font-family: 'Cabrito-ConReg';
     color: #ffffff;
@@ -476,18 +553,31 @@ img {
 .no-b-margin {
     margin-bottom: 0 !important;
 }
+
+@media screen and (min-width: 768px) {
+    .rules__title {
+        max-width: 1100px;
+        font-size: 45px;
+    }
+}
 /******************         FAQ Page          **********************/
 
+.faq__body {
+    padding-top: 40px;
+}
 .faq__container {
     max-width: 90%;
     margin: 0px auto 40px;
-
 }	
 
 .faq__title {
-	margin: 0px auto 10px;
-	max-width: 90%;
+    max-width: 90%;
+    margin: 0px auto;
+    font-size: 33px;
     color: #ffffff;
+    text-align: center; 
+    text-shadow: 1px 1px 1px #000000b0;
+    font-family: 'Din-Condensed';
 }
 .faq__question {
 	margin: 0;
@@ -511,9 +601,40 @@ img {
     margin: 70px 0px -20px;    
 }
 
+.mobile-b-margin {
+    margin-bottom: 20px;        
+}
+
 @media screen and (min-width: 768px) {
     .faq__container {
         max-width: 80%;
+    }
+
+
+}
+
+@media screen and (min-width: 1100px) {
+    .mobile-b-margin {
+        margin-bottom: 0px;
+    }
+    .faq__title {
+        max-width: 1100px;
+        font-size: 45px;
+    }
+
+    .desktop-b-margin {
+        margin-bottom: 15px;
+    }
+}
+
+/**** iPhone SE ***/
+@media screen and (max-width: 321px) {
+    .faq__answer {
+        font-size: 12px;
+    }
+
+    .faq__question {
+        font-size: 15px;
     }
 }
 
