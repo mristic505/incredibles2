@@ -95,16 +95,16 @@ jQuery(document).ready(function($){
 				}
 				else {
 					if(response[0]['message'] == "duplicate_codes_submitted") {
-		        		$('.form__first-code').append('<div class="error_message">Duplicate codes submittedd</div>');
-		        		$('.form__first-code').addClass('has-error');
+		        		$('.form__codes-container').append('<div style="overflow:hidden;display:block;" class="error_message">Duplicate codes submittedd</div>');
+		        		$('.form__codes-container').addClass('has-error');
 		        	}
 		        	if(response[0]['message'] == "already_used") {
-		        		$('.form__first-code').append('<div class="error_message">One or more codes have been already used</div>');
-		        		$('.form__first-code').addClass('has-error');
+		        		$('.form__codes-container').append('<div style="overflow:hidden;display:block;" class="error_message">One or more codes have been already used</div>');
+		        		$('.form__codes-container').addClass('has-error');
 		        	}
 		        	if(response[0]['message'] == "codes_not_found") {
-		        		$('.form__first-code').append('<div class="error_message">One or more codes are invalid</div>');
-		        		$('.form__first-code').addClass('has-error');
+		        		$('.form__codes-container').append('<div style="overflow:hidden;display:block;" class="error_message">One or more codes are invalid</div>');
+		        		$('.form__codes-container').addClass('has-error');
 		        	}
 		        	if(response[0]['message'] == "all_codes_found_entry_made") {
 		        		window.location.href = "?page=thank-you";

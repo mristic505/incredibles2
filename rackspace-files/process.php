@@ -129,9 +129,13 @@ if (!empty($errors)) {
             return_response($data);
             die();
         }
+
+        // Get number of times codes were reedemed in one month by the same user ====
+        include 'get_number_of_code_redemptions.php';
         
         // Look up codes ===========
-        include 'look-up-code.php';
+        include 'look-up-code.php';        
+        
         
         // Insert user info =========
         DB::insert('registered_users', array(

@@ -91,7 +91,7 @@ function email_content($fandangoCode) {
                                     <tr>
                                     <tr>
                                         <td>
-                                            <p style="font-size:14px;">Thank you for participating in Juicy Juice Incredible Family Adventure Sweepstakes! To receive your Fandango Movie Tickets, just follow these simple steps:</p>
+                                            <p style="font-size:14px;">Thank you for participating in the Juicy Juice Incredible Family Adventure Sweepstakes! To receive your Fandango Movie Tickets, just follow these simple steps:</p>
                                             </td>
                                     </tr>
                                     <tr>
