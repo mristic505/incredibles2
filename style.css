@@ -483,6 +483,30 @@ img {
 	    width: 80%;
 	}
 }
+
+
+/******    IE 10+   *******/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .form__checkbox-container .form__field-holder label {
+        display: inline;
+    }
+
+    .form__captcha {
+        display: block;
+    }
+    @media screen and (min-width: 1100px) and (max-width: 1200px) {
+        .form__first-code, .form__second-code, .form__third-code {
+            width: 140px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .entry-page__container {
+            padding: 0px;
+        }
+    }
+}
 /******************         Thank You Page          **********************/
 
 
@@ -821,3 +845,5 @@ div.form__captcha.has-error {
     margin: 20px auto;
     opacity: 0;
 }
+
+
