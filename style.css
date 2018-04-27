@@ -166,6 +166,12 @@ img {
     display: none;
 }
 
+.landing-page__enter-btn-container {
+    overflow: hidden;
+    position: relative;
+    z-index: 99;    
+}
+
 @media screen and (min-width: 600px) {
     .landing-logo-text {
         position: absolute;
@@ -767,13 +773,13 @@ img {
         position: absolute;
         font-weight: bold;
         background-color: red;
-        font-size: 60px;
-        width: 56px;
+        font-size: 43px;
+        width: 66px;
         right: -50px;
         text-align: center;
-        line-height: 48px;
+        line-height: 40px;
         border-radius: 50%;
-        height: 56px;
+        height: 66px;
         border: 12px solid #ffffff;
         top: -50px;
     }

@@ -21,8 +21,8 @@
 	</div>
 
 	<div class="faq__container">
-		<h3 class="faq__question">What is the free movie ticket offer/sweepstakes prize?</h3>
-		<p class="faq__answer no-b-margin">Free movie ticket offer:</p>
+		<h3 class="faq__question">What is the free movie ticket<sup>*</sup> offer/sweepstakes prize?</h3>
+		<p class="faq__answer no-b-margin">Free movie ticket<sup>*</sup> offer:</p>
 		<p class="faq__answer">One (1) Fandango Promotional Code per three (3) validated in-pack Juicy Juice codes submitted. The Fandango Promotional Code is  good towards one movie ticket (up to $7.50 total ticket and  convenience fee value) to see Incredibles 2 or any Disney movie, while supplies last. Each participant may submit up to twelve (12) in-pack Codes (to submit a maximum of four (4) Offer requests) per calendar month throughout the Promotion Period.</p>
 		<p class="faq__answer no-b-margin">Sweepstakes Grand Prize (1):</p>
 		<p class="faq__answer">An Incredible Family Adventure, awarded in the form of a $10,000 check made payable to the winner to create an incredible family adventure of their choice or anything they choose. Approximate Retail Value (“ARV”) of grand prize: $10,000. Regardless of method of entry, you may participate in the sweepstakes once per day or outer stamped envelope if you are participating without purchase.</p>
@@ -67,7 +67,7 @@
 	<div class="faq__container">
 		<h3 class="faq__question">When is the last day to submit the codes for the free movie ticket offer/sweepstakes entry?</h3>
 		<p class="faq__answer">October 31, 2018 at 4:59 p.m. ET</p>
-		<p class="faq__answer movie-tix-winners">Movie Ticket Winners</p>
+		<p class="faq__answer movie-tix-winners">Fandango Movie Tickets</p>
 	</div>
 	<div class="faq__container">
 		<h3 class="faq__question">How do I purchase movie tickets with my Fandango Promotional Code?</h3>
