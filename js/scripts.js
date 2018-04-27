@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
 
         $.ajax({
 	        type: 'GET',
-	        url: 'http://juicyjuicegame.com/incredibles2/process.php',
+	        url: 'https://juicyjuicegame.com/incredibles2/process.php',
 	        data: {
 	            firstName : $('#firstName').val(),
 	            lastName : $('#lastName').val(),
