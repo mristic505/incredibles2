@@ -10,7 +10,7 @@
 	</div>
 
 	<div class="faq__container">
-		<h3 class="faq__question">How does the free movie ticket offer and sweepstakes work?</h3>
+		<h3 class="faq__question">How does the free movie ticket<sup>*</sup> offer and sweepstakes work?</h3>
 		<p class="faq__answer no-b-margin">To participate in the Offer:</p>
 		<p class="faq__answer">During the Promotion Period, you must purchase three (3) of the specially-marked Disney•Pixar’s Incredibles 2 Limited Edition Juicy Juice products; visit <a href="http://www.juicyjuice.com/Incredibles2">www.juicyjuice.com/Incredibles2</a>; and follow the instructions by providing your name, email address and three (3) unique codes (found in pack) to receive one (1) Fandango Promotional Code. With 3 in-pack codes and validation verification you will receive an email  with a Fandango Promotional Code good towards one movie ticket (up to $7.50 total ticket and  convenience fee value) to see Incredibles 2 or any Disney movie, while supplies last. All codes must only be used once and must be validated prior to receipt of the Fandango Promotional Code. All offer participants who have successfully received a Fandango Promotional Code will be automatically entered into the Sweepstakes.</p>
 	</div>
