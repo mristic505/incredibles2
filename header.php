@@ -30,7 +30,7 @@
 				<source  class="header__incredibles-hero-img" srcset="assets/imgs/LandingPage-Incredibles2-Mobile-2-June15.jpg" media="(max-width: 550px)">
 				<img class="header__incredibles-hero-img" src="assets/imgs/incredibles-hero-large.jpg">
 			</picture>
-			<p class="landing-logo-text"><em>Incredibles 2</em> &copy; 2018 Disney / Pixar</p>
+			<p class="landing-logo-text"><em>Incredibles 2 &copy; 2018 Disney/Pixar</em></p>
 		</section>
 		
 	</header>
