@@ -11,7 +11,7 @@ jQuery(document).ready(function($){
     		$(this).remove();
     	});
     	$('.loader').css('opacity', 1);
-    	
+
 
         $.ajax({
 	        type: 'GET',
@@ -113,6 +113,11 @@ jQuery(document).ready(function($){
 		        	if(response[0]['message'] == "played_4_times_this_month") {
 		        		$('.form__codes-container').append('<div style="overflow:hidden;display:block;" class="error_message">You already entered 4 times this month.</div>');
 		        		$('.form__codes-container').addClass('has-error');
+		        	}
+		        	// If recpatcha expired
+		        	if(response[0]['message'] == "robot_verification_failed") {
+		        		$('.g-recaptcha > div').append('<div class="error_message">reCaptcha verification failed.</div>');
+		        		$('.form__captcha').addClass('has-error');
 		        	}
 				}
 	        }

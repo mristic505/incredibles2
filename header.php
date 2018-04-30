@@ -12,7 +12,7 @@
 <!-- Normalize CSS -->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 <!-- User Stylesheet -->
-<link rel="stylesheet" type="text/css" href="style.css?ver=1.1">
+<link rel="stylesheet" type="text/css" href="style.css?ver=1.0.3">
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js></script>
