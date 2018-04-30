@@ -19,7 +19,7 @@
 <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
-
+<?php echo $flood_light; ?>
 <main>
 	<header class="header">
 		<div class="header__jj-logo-container">
