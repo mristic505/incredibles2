@@ -5,7 +5,7 @@
 	</div>
 	<div class="entry-page__middle-section">
 		<div class="entry-page__instruction-container">
-			<h1 class="entry-page__instruction-title">Register and submit 3 product codes to receive a Fandango movie ticket.*</h1>
+			<h1 class="entry-page__instruction-title">Register and submit 3 product codes to receive a Fandango Movie Ticket.*</h1>
 			<h2 class="entry-page__instruction-subtext">(Valid for Disney•Pixar’s <em>Incredibles 2</em> or any other Disney movie. Up to $7.50 total value.)</h2>
 			<p class="entry-page__form-instruction">ALL FIELDS  UNLESS INDICATED</p>
 		</div>
