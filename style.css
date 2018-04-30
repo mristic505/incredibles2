@@ -353,7 +353,7 @@ img {
         height: 11px;
     }
     .form__age-check label, .form__email-opt-in label, .form__sweep-opt-in label {
-        margin-left: 20px;
+        margin-left: 34px;
         display: block;
     }
 }
