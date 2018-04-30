@@ -11,6 +11,7 @@ jQuery(document).ready(function($){
     		$(this).remove();
     	});
     	$('.loader').css('opacity', 1);
+    	
 
         $.ajax({
 	        type: 'GET',
