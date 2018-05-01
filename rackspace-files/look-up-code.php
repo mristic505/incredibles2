@@ -45,7 +45,7 @@ if (in_array('found', $used_codes_search_result)) {
 // Check if each submitted code exists in DB ==========
 foreach ($codes as $code) {
     $i++;
-    $result = DB::query("SELECT codes FROM codes_test WHERE codes=%s", $code);
+    $result = DB::query("SELECT codes FROM codes WHERE codes=%s", $code);
     // if code not found, set variable as not_found
     if (empty($result))
         ${"code_" . $i} = 'not_found';
@@ -69,7 +69,8 @@ if (!empty($codes_search_result)) {
         foreach ($codes_search_result as $code) {
             DB::insert('used_codes', array(
                 'used_by' => $email,
-                'codes' => $code
+                'codes' => $code,
+                'month' => $current_month
             ));
         }
     }

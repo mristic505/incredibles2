@@ -10,13 +10,9 @@ jQuery(document).ready(function($){
     	$('.error_message').each(function(){
     		$(this).remove();
     	});
-    	$('.loader').css('opacity', 1);
+    	$('.loader').css('opacity', 1);    	
 
-
-        $.ajax({
-	        type: 'GET',
-	        url: 'https://juicyjuicegame.com/incredibles2/process.php',
-	        data: {
+    	var form_data = {
 	            firstName : $('#firstName').val(),
 	            lastName : $('#lastName').val(),
 	            email : $('#email').val(),
@@ -29,7 +25,12 @@ jQuery(document).ready(function($){
 	            emailOptIn : $('#emailOptIn:checked').val(),
 	            sweepOptIn : $('#sweepOptIn:checked').val(),
 	            recaptcha: grecaptcha.getResponse()
-	        },
+	        };
+
+        $.ajax({
+	        type: 'GET',
+	        url: 'https://juicyjuicegame.com/incredibles2/process.php',
+	        data: form_data,
 	        dataType: 'jsonp',
 	        crossDomain: true,
 	    }).done(function(response){
@@ -39,6 +40,8 @@ jQuery(document).ready(function($){
 	        	
 	        	// if error messages exist	        	
 	        	if (typeof response[0]['errors'] != "undefined") {
+	        	   // Reset Captcha
+	        	   grecaptcha.reset();
 				   if(response[0]['errors']['email'] == "Emails_do_not_match") {
 		        		$('.form__email').append('<div class="error_message">Emails do not match</div>');
 		        		$('.form__email').addClass('has-error');
@@ -96,26 +99,36 @@ jQuery(document).ready(function($){
 				}
 				else {
 					if(response[0]['message'] == "duplicate_codes_submitted") {
-		        		$('.form__codes-container').append('<div style="overflow:hidden;display:block;" class="error_message">Duplicate codes submittedd</div>');
+						// Reset Captcha
+	        	   		grecaptcha.reset();
+		        		$('.form__codes-container').append('<div style="overflow:hidden;display:block;" class="error_message error_message_code">Duplicate codes submittedd</div>');
 		        		$('.form__codes-container').addClass('has-error');
 		        	}
 		        	if(response[0]['message'] == "already_used") {
-		        		$('.form__codes-container').append('<div style="overflow:hidden;display:block;" class="error_message">One or more codes have been already used</div>');
+		        		// Reset Captcha
+	        	   		grecaptcha.reset();
+		        		$('.form__codes-container').append('<div style="overflow:hidden;display:block;" class="error_message error_message_code">One or more codes have been already used</div>');
 		        		$('.form__codes-container').addClass('has-error');
 		        	}
 		        	if(response[0]['message'] == "codes_not_found") {
-		        		$('.form__codes-container').append('<div style="overflow:hidden;display:block;" class="error_message">One or more codes are invalid</div>');
+		        		// Reset Captcha
+	        	   		grecaptcha.reset();
+		        		$('.form__codes-container').append('<div style="overflow:hidden;display:block;" class="error_message error_message_code">One or more codes are invalid</div>');
 		        		$('.form__codes-container').addClass('has-error');
 		        	}
 		        	if(response[0]['message'] == "all_codes_found_entry_made") {
 		        		window.location.href = "?page=thank-you";
 		        	}
 		        	if(response[0]['message'] == "played_4_times_this_month") {
-		        		$('.form__codes-container').append('<div style="overflow:hidden;display:block;" class="error_message">You already entered 4 times this month.</div>');
+		        		// Reset Captcha
+	        	   		grecaptcha.reset();
+		        		$('.form__codes-container').append('<div style="overflow:hidden;display:block;" class="error_message error_message_code">You already entered 4 times this month.</div>');
 		        		$('.form__codes-container').addClass('has-error');
 		        	}
 		        	// If recpatcha expired
 		        	if(response[0]['message'] == "robot_verification_failed") {
+		        		// Reset Captcha
+	        	   		grecaptcha.reset();
 		        		$('.g-recaptcha > div').append('<div class="error_message">reCaptcha verification failed. Please try again.</div>');
 		        		$('.form__captcha').addClass('has-error');
 		        	}

@@ -827,6 +827,9 @@ img {
     color: #B94A48;
     font-weight: bold;
 }
+.error_message_code {
+    text-align: center;
+}
 .has-error input[type="text"], 
 .has-error input[type="email"],
 .has-error .g-recaptcha > div {

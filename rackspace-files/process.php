@@ -10,7 +10,7 @@ $mail->CharSet = 'UTF-8';
 require_once 'meekrodb.2.3.class.php';
 DB::$user     = 'matejar';
 DB::$password = 'BCconnect1500$-';
-DB::$dbName   = 'temp2';
+DB::$dbName   = 'incredibles2';
 
 function return_response($response)
 {
@@ -19,6 +19,9 @@ function return_response($response)
 
 $errors = array(); // array to hold validation errors
 $data   = array(); // array to pass back data
+
+date_default_timezone_set("America/New_York");
+$current_month = date('m');
 
 $firstName          = $_GET['firstName'];
 $lastName           = $_GET['lastName'];
