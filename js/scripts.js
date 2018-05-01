@@ -116,7 +116,7 @@ jQuery(document).ready(function($){
 		        	}
 		        	// If recpatcha expired
 		        	if(response[0]['message'] == "robot_verification_failed") {
-		        		$('.g-recaptcha > div').append('<div class="error_message">reCaptcha verification failed.</div>');
+		        		$('.g-recaptcha > div').append('<div class="error_message">reCaptcha verification failed. Please try again.</div>');
 		        		$('.form__captcha').addClass('has-error');
 		        	}
 				}
