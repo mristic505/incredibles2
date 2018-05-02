@@ -42,7 +42,7 @@
 	</div>
 	<div class="faq__container">
 		<h3 class="faq__question">What stores are selling the specially-marked Disney•Pixar’s Incredibles 2 participating products?</h3>
-		<p class="faq__answer">You can find the Disney•Pixar’s Incredibles 2 participating products at the following stores <a target="_blank" href="http://juicyjuice.com/where-to-find/">http://juicyjuice.com/where-to-find/</a> </p>
+		<p class="faq__answer">You can find the Disney•Pixar’s Incredibles 2 participating products at the following stores <a target="_blank" href="https://juicyjuice.com/where-to-find/">http://juicyjuice.com/where-to-find/</a> </p>
 	</div>
 	<div class="faq__container">
 		<h3 class="faq__question">Do these specially-marked Disney•Pixar’s Incredibles 2 participating products cost more than the Juicy Juice I usually buy?</h3>
