@@ -5,10 +5,10 @@
 <head>
 <title><?php echo $page_title; ?> | Incredibles 2</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:url"                content="http://juicyjuice.staging.wpengine.com/incredibles2" />
+<meta property="og:url"                content="https://juicyjuice.com/incredibles2" />
 <meta property="og:title"              content="Incredibles 2" />
-<meta property="og:description"        content="I entered the Incredible Family Adventure Offer and Sweepstakes and got a FREE movie ticket. *FANDANGO PROMO CODE expires 3/31/19. Up to $7.50 value. See www.juicyjuice.com/incredibles2 for full details. While supplies last." />
-<meta property="og:image"              content="http://juicyjuice.com/incredibles2/assets/imgs/face-book-share-img.jpg" />
+<meta property="og:description"        content="I just got my chance at something 100% incredible from Juicy Juice!" />
+<meta property="og:image"              content="https://juicyjuice.com/incredibles2/assets/imgs/face-book-share-img.jpg" />
 <!-- Normalize CSS -->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 <!-- User Stylesheet -->
@@ -36,7 +36,7 @@
 <main>
 	<header class="header">
 		<div class="header__jj-logo-container">
-			<a target="_blank" href="http://juicyjuice.com/"><img class="header__jj-logo-img" src="assets/imgs/jj-logo-01.svg"></a>
+			<a target="_blank" href="https://juicyjuice.com/"><img class="header__jj-logo-img" src="assets/imgs/jj-logo-01.svg"></a>
 		</div>
 		<section class="header__incredibles-hero-container">
 			<picture>
